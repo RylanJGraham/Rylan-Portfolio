@@ -83,7 +83,7 @@ const about = {
         },
         {
         fieldName: "Languages",
-        fieldValue: "English, Spanish, Polish, Catalan"
+        fieldValue: "English, Spanish, Polish"
         },
         
         
