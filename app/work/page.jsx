@@ -45,7 +45,7 @@ const projects1 = [
     {
         num: "04",
         category: "Unity Audio Systems Demonstration",
-        title: "Snow Race",
+        title: "Unity Audio Systems Demonstration",
         description: "Unity scene demonstrating proper usage of spatial audio, track-blending, atmospheric audio, track-layer, audio-mixing, and region specific filtering.",
         stack: [{ name: "C++" }, { name: "Unity" }, { name: "Github" }, { name: "Visual Studio" }, { name: "C#" }],
         image: "/assets/work/Audio.png",
