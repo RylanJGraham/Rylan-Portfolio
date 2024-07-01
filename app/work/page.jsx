@@ -44,6 +44,16 @@ const projects1 = [
     },
     {
         num: "04",
+        category: "Unity Audio Systems Demonstration",
+        title: "Snow Race",
+        description: "Unity scene demonstrating proper usage of spatial audio, track-blending, atmospheric audio, track-layer, audio-mixing, and region specific filtering.",
+        stack: [{ name: "C++" }, { name: "Unity" }, { name: "Github" }, { name: "Visual Studio" }, { name: "C#" }],
+        image: "/assets/work/Audio.png",
+        live: "https://play.unity.com/mg/other/webgl-builds-404826",
+        github: "https://github.com/AdriaPm/DigitalAudio_UnityScene",
+    },
+    {
+        num: "05",
         category: "Worms Replica",
         title: "Worms Replica",
         description: "Worms game title replica. Physics Engine was original and created using classroom learnings. Concepts: Drag Force, Projectile Motion, Ballistics, & Gravitational Elements.",
@@ -53,7 +63,7 @@ const projects1 = [
         github: "https://github.com/Historn/WormsGameProject",
     },
     {
-        num: "05",
+        num: "06",
         category: "The ToyBox",
         title: "The ToyBox",
         description: "8 man RPG project, complete with fully operational UI, Combat, Exploration & more. Developed by hand drawn artwork. Expected Launch May 2023. Culminating Year 2 Degree Project.",
@@ -63,7 +73,7 @@ const projects1 = [
         github: "https://github.com/Fun-Makers-Studios/Project2_TheToyBox",
     },
     {
-        num: "06",
+        num: "07",
         category: "Retro Pinball",
         title: "Retro Pinball",
         description: "Game created using Box2D Physics Libraries and SDL Libraries on Microsoft Visual Studio. Created to demonstrate collision physics understanding.",
@@ -73,7 +83,7 @@ const projects1 = [
         github: "https://github.com/AdriaPm/Pinball-Game",
     },
     {
-        num: "07",
+        num: "08",
         category: "Snow Race",
         title: "Snow Race",
         description: "Simple 3D racing car game created for Physics II subject at CITM-UPC university. Using Bullet3D collision and aerodynamic forces. OpenGL rendering for game & camera elements. ",
