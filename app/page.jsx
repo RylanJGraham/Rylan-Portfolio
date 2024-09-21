@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import {FiDownload} from "react-icons/fi";
 
 // Replace 'cv.pdf' with the actual filename of your CV
-const cvFileUrl = '/assets/pdf/RylanJamesGrahamResume.pdf';
+const cvFileUrl = '/assets/pdf/RylanJGrahamCV.pdf';
 
 //components
 import Social from "@/components/Social";
