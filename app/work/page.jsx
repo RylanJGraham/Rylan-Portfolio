@@ -99,6 +99,16 @@ const projects2 = [
     {
         num: "01",
         category: "Beta Release",
+        title: "PokéRest",
+        description: "PokéRest is a full-stack web application created in 6 hrs using Next.js, TypeScript, Shadcn-UI, and restAPI calls to PokeAPI. The project features dynamic routing, search filtering, clean UI, and optimized API retrievals to ensure a functional and superb user experience.",
+        stack: [{ name: "Next.js" }, { name: "TypeScript" }, { name: "Shadcn" }, { name: "restAPI" }, { name: "Tailwind" }],
+        image: "/assets/work/poke.png",
+        live: "https://pokerest-app.vercel.app/",
+        github: "https://github.com/RylanJGraham/pokerest",
+    },
+    {
+        num: "02",
+        category: "Beta Release",
         title: "WeatherTune",
         description: "WeatherTune is a sleek and intuitive weather forecast app developed by a team of four students from CITM-UPC University. Stay ahead of the weather with accurate forecasts and a delightful user experience.",
         stack: [{ name: "Flutter" }, { name: "Dart" }, { name: "Figma" }, { name: "Firebase" }, { name: "BLOC" }, { name: "Rapid API" }, { name: "Google API" }],
@@ -107,7 +117,7 @@ const projects2 = [
         github: "https://github.com/RylanJGraham/WeatherTune",
     },
     {
-        num: "02",
+        num: "03",
         category: "Beta Release",
         title: "SummAIrize",
         description: "Article Summarizer built using OpenAI GPT model, Takes article url and provides a concise summary.​",
@@ -117,7 +127,7 @@ const projects2 = [
         github: "https://github.com/RylanJGraham/AI-ArticleSummarizer",
     },
     {
-        num: "03",
+        num: "04",
         category: "Beta Release",
         title: "CulinARy",
         description: "WeatherTune is a sleek and intuitive weather forecast app developed by a team of four students from CITM-UPC University. Stay ahead of the weather with accurate forecasts and a delightful user experience.",
@@ -127,7 +137,7 @@ const projects2 = [
         github: "https://github.com/RylanJGraham/CulinARy",
     },
     {
-        num: "04",
+        num: "05",
         category: "Beta Release",
         title: "AI Voice Assistant (In-Progress)",
         description: "Mobile application integrated with voice recognition & GPT4 and DallE API user prompting. Ask away!",
@@ -231,6 +241,16 @@ const projects4 = [
 const projects5 = [
     {
         num: "01",
+        category: "Full Stack App Project",
+        title: "SEAT-Cupra ML Software Developer Intern",
+        description: "Working with SEAT-Cupra to develop advanced machine learning solutions for UI/UX. Project was created using QLearning, PyTorch, Unity Engine, and Supabase PostgreSQL",
+        stack: [{ name: "PyTorch" }, { name: "Unity Engine" }, { name: "Python" }, { name: "Supabase" }, { name: "C#" } ],
+        image: "/assets/work/intern.png",
+        live: "https://www.cupraofficial.es/",
+        github: "https://www.cupraofficial.es/",
+    },
+    {
+        num: "02",
         category: "Video Game Project",
         title: "SEAT-Cupra UPC Catedra Gamified Car",
         description: "Created a gamified car application to improve the user driving experience. Developed a prototype & presented to SEAT-Cupra & EDAG departments. Worked in a team of 4 people from similar backgrounds.",
@@ -239,16 +259,7 @@ const projects5 = [
         live: "https://www.citm.upc.edu/blog/presentacion-de-los-proyectos-cupra-gamified-car/",
         github: "https://www.citm.upc.edu/blog/presentacion-de-los-proyectos-cupra-gamified-car/",
     },
-    {
-        num: "02",
-        category: "Full Stack App Project",
-        title: "SEAT-Cupra ML-UI/UX Intern",
-        description: "Working with SEAT-Cupra to develop advanced machine learning solutions for UI/UX. Project is being completed under NDA agreement. No information can be released.",
-        stack: [{ name: "NDA" }],
-        image: "/assets/work/intern.png",
-        live: "https://www.cupraofficial.es/",
-        github: "https://www.cupraofficial.es/",
-    },
+    
     // Add more featured projects if needed
 ];
 
