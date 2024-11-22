@@ -397,7 +397,7 @@ const ProjectSlideshow = ({ projects }) => {
                 >
                     {projects.map((project, index) => (
                         <SwiperSlide key={index}>
-                            <Image src={project.image} alt={project.title} width={500} height={400} className='w-full h-full object-fit rounded-2xl' />
+                            <Image src={project.image} alt={project.title} width={500} height={400} unoptimized className='w-full h-full object-fit rounded-2xl' />
                         </SwiperSlide>
                     ))}
                     <WorkSliderBtns

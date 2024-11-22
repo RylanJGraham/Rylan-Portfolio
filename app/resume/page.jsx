@@ -9,11 +9,9 @@ import {
     FaReact,
     FaFigma,
     FaCuttlefish, // Assuming this for C++
-    FaGoogle, // For Firebase
     FaPython, // For Python
     FaNode, // For Node.js
     FaBrush,
-    FaJava, // For Node.js
 } from "react-icons/fa";
 
 import {
@@ -50,6 +48,9 @@ import {
     SiLibrarything,
     SiOpengl,
     SiBox,
+    SiMysql,
+    SiR,
+    SiTableau,
 } from "react-icons/si";
 
 // About data
@@ -267,6 +268,24 @@ const skills = {
                 name: "ToonBoom Harmony",
             },
         ],
+        "Data": [
+            {
+                icon: <SiMysql />,
+                name: "MySQL",
+            },
+            {
+                icon: <SiR />,
+                name: "R",
+            },
+            {
+                icon: <PiMicrosoftExcelLogo />,
+                name: "Excel",
+            },
+            {
+                icon: <SiTableau />,
+                name: "Tableau",
+            },
+        ],
         "Libraries": [
             {
                 icon: <SiOpengl />,
@@ -336,6 +355,8 @@ import { motion } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipProvider } from "@/components/ui/tooltip";
 import { TooltipContent, TooltipTrigger } from "@radix-ui/react-tooltip";
+import { BsFileExcel } from 'react-icons/bs';
+import { PiMicrosoftExcelLogo } from 'react-icons/pi';
 
 const Resume = () => {
     return (
