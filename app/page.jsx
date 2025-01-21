@@ -1,5 +1,8 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import {FiDownload} from "react-icons/fi";
+import { ReactTyped } from "react-typed";
 
 // Replace 'cv.pdf' with the actual filename of your CV
 const cvFileUrl = '/assets/pdf/RylanJGrahamCV.pdf';
@@ -17,9 +20,23 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 x;:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Video Game Designer/Developer, Full Stack Developer, <br/> UI/UX Designer, & 3D Artist & Animator</span>
+            <span className="text-xl">
+              <ReactTyped
+                  strings={[
+                    "Video Game Designer/Developer",
+                    "Full Stack Developer",
+                    "UI/UX Designer",
+                    "3D Artist and Animator",
+                    "Data Engineer",
+                    "ML & AI",
+                  ]}
+                  typeSpeed={80}
+                  backSpeed={50}
+                  loop
+                />
+            </span>
             <h1 className="h1 mb-6">Hello I'm <br/> <span className="text-accent">Rylan Graham</span></h1>
-            <p className="max-w-[500px] mb-9 text-white/80">I excel at creating engaging Videogames, elegant Mobile/Web software experiences, beautiful 3D digital artistry, and I am proficient in various programming languages & softwares</p>
+            <p className="max-w-[500px] mb-9 text-white/80">I excel at creating engaging Videogames, elegant Mobile/Web software experiences, beautiful 3D digital artistry, and robust & scalable ML-Data Engineering Solutions</p>
             {/* btn & socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a href={cvFileUrl} download="Rylan_Graham_CV.pdf" className="uppercase flex items-center gap-2">

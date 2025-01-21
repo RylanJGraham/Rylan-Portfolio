@@ -8,25 +8,25 @@ const services = [
         num: '01',
         title: 'Video Game Design & Development',
         description: 'Experience in Video Game Development with AI Logic, Assets, Shaders, Environments, Particles, Game Systems, Game Economies, and Player Functionality.',
-        href: "/work",
+        href: "/videogames",
     },
     {
         num: '02',
         title: 'Full Stack Mobile/Web Development',
         description: 'Experience creating responsive, clean, and fast web/app software. Front and Back End experience, APIs, Augmented Reality Implementation, Location Services & more!',
-        href: "/work",
+        href: "/software",
     },
     {
         num: '03',
         title: 'UX/UI Design',
         description: 'Development of clean, adaptive, and stylized user experiences in applications, video games, and Automotive displays using industry leading tools & softwares.',
-        href: "/work",
+        href: "/ui",
     },
     {
         num: '04',
         title: '3D Art & Animation',
         description: '3D environment work, model animation, texture painting, particle & shader work. Experience with full work flow, Modeling, UVs, Rigging, Textures & Animations',
-        href: "/work",
+        href: "/art",
     }
 ];
 

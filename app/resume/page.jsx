@@ -68,7 +68,7 @@ const about = {
         },
         {
         fieldName: "Experience",
-        fieldValue: "3+ Years"
+        fieldValue: "4+ Years"
         },
         {
         fieldName: "Email",
@@ -80,7 +80,7 @@ const about = {
         },
         {
         fieldName: "Availability",
-        fieldValue: "intern at SEAT-CUPRA"
+        fieldValue: "Open to Full/Part Time"
         },
         {
         fieldName: "Languages",
@@ -100,7 +100,7 @@ const experience = {
         {
             imgSrc: '/assets/work/Cupra-SEAT.png',
             company: "SEAT-Cupra",
-            position: "ML UI/UX Developer Intern",
+            position: "ML Software Developer Intern",
             duration: "2024-present",
         },
         {
