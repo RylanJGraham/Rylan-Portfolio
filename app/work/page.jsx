@@ -703,7 +703,7 @@ const ProjectDisplay = ({ projects }) => {
                             layout="fill"
                             objectFit="cover"
                             className="rounded-2xl"
-                            priority={index === 0} // Set priority for the first image
+                            unoptimized
                         />
                     </div>
 
