@@ -13,6 +13,8 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { CgWebsite } from "react-icons/cg";
 import WorkNav from "../components/WorkNav"; // adjust path as needed
 import TFGDisplay from "../components/TFG"; // adjust path as needed
+import ProjectStackDisplay from "../components/ProjectStackDisplay"; // adjust path as needed
+
 
 
 const projects1 = [
@@ -200,7 +202,7 @@ const projects3 = [
         category: "UI/UX Design Project",
         title: "Primavera Pulse",
         description: "Primavera Pulse serves as a gamified app companion for the global music festival: Primavera Sound. Using gamified mechanics users can explore & enjoy the festival more, with nice rewards! Development is currently in the UI Demo stage, attached below is the figma prototype!",
-        stack: [{ name: "Figma" }, { name: "Photoshop" }, { name: "Excel" }, { name: "Google Slides" }],
+        stack: [{ name: "Figma" }, { name: "Photoshop" }, { name: "Excel" }, { name: "GoogleSlides" }],
         image: "/assets/work/PrimaveraShort.png",
         live: "https://www.figma.com/proto/Lw3BcdaDKPdpsI7yrEcaTz/Primavera-Pulse?node-id=2-545&t=TqmqKKVTSYVCKREP-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A545&show-proto-sidebar=1",
         github: "https://docs.google.com/presentation/d/e/2PACX-1vQ4OOGAp8degVyu6s6ZQam5bzvV003IzNlAJzUXgv6xE5x6Fnj0sUQ70bbtuGCEAG_2jJ-cnFsA_DI3/pub?start=false&loop=false&delayms=3000",
@@ -508,117 +510,97 @@ const tfg = [
 
 
 const Work = () => {
-
     return (
-        <motion.section 
-            initial={{ opacity: 0 }} 
-            animate={{ opacity: 1, transition: {delay:2.4, duration: 0.4, ease: "easeIn"} }} 
-            className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
-        >
-             <WorkNav />
-            <div id="rauxa-tfg" className="container mx-auto mb-24">
-                <div>
-                <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
-                    Final Degree Project
-                </div>
-                </div>
-                <div className="flex items-center my-4">
-                    <div className="flex-grow h-px bg-accent"></div>
-                </div>
-                
-                <TFGDisplay projects={tfg}/>
+      <motion.section
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
+        className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
+      >
+        <WorkNav />
+  
+        <Tabs defaultValue="thesis" className="w-full">
+          {/* Top-Level Tab Buttons in a Row */}
+          <TabsList className="flex justify-center flex-wrap gap-4 mb-12">
+            <TabsTrigger value="thesis">Thesis Project</TabsTrigger>
+            <TabsTrigger value="apps">Apps</TabsTrigger>
+            <TabsTrigger value="web">Web</TabsTrigger>
+            <TabsTrigger value="games">Video Games</TabsTrigger>
+            <TabsTrigger value="professional">Professional</TabsTrigger>
+            <TabsTrigger value="data">Data Engineering</TabsTrigger>
+          </TabsList>
+  
+          {/* Thesis Project */}
+          <TabsContent value="thesis">
+            <div className="container mx-auto mb-24">
+              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+                Final Degree Project
+              </div>
+              <div className="flex items-center my-4">
+                <div className="flex-grow h-px bg-accent"></div>
+              </div>
+              <TFGDisplay projects={tfg} />
             </div>
-            <div id="featured-projects" className='container mx-auto'>
-                <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
-                Featured Projects
-                </div>
-                <div className="flex items-center my-4">
-                    <div className="flex-grow h-px bg-accent"></div>
-                </div>
+          </TabsContent>
+  
+          <TabsContent value="apps">
+  <div className="container mx-auto">
+    <div className="text-8xl font-extrabold text-transparent text-outline">Apps</div>
+    <div className="flex items-center my-4">
+      <div className="flex-grow h-px bg-accent"></div>
+    </div>
+    <ProjectStackDisplay projects={projects3} />
+  </div>
+</TabsContent>
 
-                <Tabs defaultValue="category-2" className="flex flex-col">
-                    <TabsList className="grid grid-cols-2 gap-6 sm:flex sm:flex-row sm:justify-center">
-                        <TabsTrigger value="category-2">Alien: Nemesis</TabsTrigger>
-                        <TabsTrigger value="category-4">VertX Engine</TabsTrigger>
-                        <TabsTrigger value="category-10">Primavera Pulse</TabsTrigger>
-                        <TabsTrigger value="category-5">HyperStrike</TabsTrigger>
-                        <TabsTrigger value="category-1">Cupra-ML</TabsTrigger>
-                        <TabsTrigger value="category-6">PokéRest</TabsTrigger>
-                        <TabsTrigger value="category-7">Unity Data</TabsTrigger>
-                        <TabsTrigger value="category-8">Ghibli-Environment</TabsTrigger>
-                        <TabsTrigger value="category-9">Qatar 2022</TabsTrigger>
-                    </TabsList>
+<TabsContent value="web">
+  <div className="container mx-auto">
+    <div className="text-8xl font-extrabold text-transparent text-outline">Web</div>
+    <div className="flex items-center my-4">
+      <div className="flex-grow h-px bg-accent"></div>
+    </div>
+    <ProjectStackDisplay projects={projects3} />
+  </div>
+</TabsContent>
 
-                    <TabsContent value="category-1" className="mt-8">
-                        <ProjectDisplay projects={highlight1} />
-                    </TabsContent>
-                    <TabsContent value="category-2" className="mt-8">
-                        <ProjectDisplay projects={highlight2} />
-                    </TabsContent>
-                    <TabsContent value="category-4" className="mt-8">
-                        <ProjectDisplay projects={highlight4} />
-                    </TabsContent>
-                    <TabsContent value="category-5" className="mt-8">
-                        <ProjectDisplay projects={highlight5} />
-                    </TabsContent>
-                    <TabsContent value="category-6" className="mt-8">
-                        <ProjectDisplay projects={highlight6} />
-                    </TabsContent>
-                    <TabsContent value="category-7" className="mt-8">
-                        <ProjectDisplay projects={highlight7} />
-                    </TabsContent>
-                    <TabsContent value="category-8" className="mt-8">
-                        <ProjectDisplay projects={highlight8} />
-                    </TabsContent>
-                    <TabsContent value="category-9" className="mt-8">
-                        <ProjectDisplay projects={highlight9} />
-                    </TabsContent>
-                    <TabsContent value="category-10" className="mt-8">
-                        <ProjectDisplay projects={highlight10} />
-                    </TabsContent>
-                </Tabs>
+{/* ...repeat for other categories: games, professional, data */}
+  
+          {/* Video Games */}
+          <TabsContent value="games">
+            <div className="container mx-auto">
+              <div className="text-8xl font-extrabold text-transparent text-outline">Video Games</div>
+              <div className="flex items-center my-4">
+                <div className="flex-grow h-px bg-accent"></div>
+              </div>
+              <ProjectSlideshow projects={projects1} />
             </div>
-            <div id="all-projects" className='container mx-auto'>
-                <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
-                All Projects
-                </div>
-                <div className="flex items-center my-4">
-                    <div className="flex-grow h-px bg-accent"></div>
-                </div>
-
-                <Tabs defaultValue="category-2" className="flex flex-col">
-                    <TabsList className="grid grid-cols-2 gap-6 sm:flex sm:flex-row sm:justify-center">
-                        <TabsTrigger value="category-2">Video Games</TabsTrigger>
-                        <TabsTrigger value="category-3">Web/App</TabsTrigger>
-                        <TabsTrigger value="category-4">UI/UX</TabsTrigger>
-                        <TabsTrigger value="category-5">3D Art & Animation</TabsTrigger>
-                        <TabsTrigger value="category-1">Professional</TabsTrigger>
-                        <TabsTrigger value="category-6">Data Engineering</TabsTrigger>
-                    </TabsList>
-
-                    <TabsContent value="category-1" className="mt-8">
-                        <ProjectSlideshow projects={projects5} />
-                    </TabsContent>
-                    <TabsContent value="category-2" className="mt-8">
-                        <ProjectSlideshow projects={projects1} />
-                    </TabsContent>
-                    <TabsContent value="category-3" className="mt-8">
-                        <ProjectSlideshow projects={projects2} />
-                    </TabsContent>
-                    <TabsContent value="category-4" className="mt-8">
-                        <ProjectSlideshow projects={projects3} />
-                    </TabsContent>
-                    <TabsContent value="category-5" className="mt-8">
-                        <ProjectSlideshow projects={projects4} />
-                    </TabsContent>
-                    <TabsContent value="category-6" className="mt-8">
-                        <ProjectSlideshow projects={projects6} />
-                    </TabsContent>
-                </Tabs>
+          </TabsContent>
+  
+          {/* Professional */}
+          <TabsContent value="professional">
+            <div className="container mx-auto">
+              <div className="text-8xl font-extrabold text-transparent text-outline">Professional</div>
+              <div className="flex items-center my-4">
+                <div className="flex-grow h-px bg-accent"></div>
+              </div>
+              <ProjectSlideshow projects={projects5} />
             </div>
-        </motion.section>
+          </TabsContent>
+  
+          {/* Data Engineering */}
+          <TabsContent value="data">
+            <div className="container mx-auto">
+              <div className="text-8xl font-extrabold text-transparent text-outline">Data Engineering</div>
+              <div className="flex items-center my-4">
+                <div className="flex-grow h-px bg-accent"></div>
+              </div>
+              <ProjectSlideshow projects={projects6} />
+            </div>
+          </TabsContent>
+        </Tabs>
+      </motion.section>
     );
-}
+  };
+  
 
 const ProjectSlideshow = ({ projects }) => {
     const [projectIndex, setProjectIndex] = useState(0);
