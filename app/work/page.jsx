@@ -11,6 +11,9 @@ import Image from 'next/image';
 import WorkSliderBtns from '@/components/WorkSliderBtns';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { CgWebsite } from "react-icons/cg";
+import WorkNav from "../components/WorkNav"; // adjust path as needed
+import TFGDisplay from "../components/TFG"; // adjust path as needed
+
 
 const projects1 = [
     {
@@ -487,6 +490,21 @@ const highlight10 = [
     // Add more featured projects if needed
 ];
 
+const tfg = [
+    {
+        num: "01",
+        category: "Rauxa App",
+        title: "Rauxa - Full Stack App",
+        description: "The Tinder for Spontaneous Meetups! Rauxa is an innovative mobile app that helps users find events and connect with people based on their preferences and location. Built with a focus on real-time social interactions, event-based matchmaking, and user-friendly experiences, Rauxa aims to simplify event discovery and enhance social engagement. Built with a robust back-end, secure user authentification system, and ML matching algorithms, Rauxa aims to be Barcelona's student, tourist, and local's choice in social apps",
+        stack: [{ name: "Expo" }, { name: "Firebase" }, { name: "Github" }, { name: "React Native" }, { name: "Figma" }, { name: "Mixamo" },],
+        image: "/assets/work/TFG.png",
+        live: "https://github.com/Historn/NetworksProject",
+        github: "https://github.com/Historn/NetworksProject",
+        completion: "6 Months",
+    },
+    // Add more featured projects if needed
+];
+
 
 
 const Work = () => {
@@ -497,7 +515,19 @@ const Work = () => {
             animate={{ opacity: 1, transition: {delay:2.4, duration: 0.4, ease: "easeIn"} }} 
             className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
         >
-            
+             <WorkNav />
+            <div id="rauxa-tfg" className="container mx-auto mb-24">
+                <div>
+                <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
+                    Final Degree Project
+                </div>
+                </div>
+                <div className="flex items-center my-4">
+                    <div className="flex-grow h-px bg-accent"></div>
+                </div>
+                
+                <TFGDisplay projects={tfg}/>
+            </div>
             <div id="featured-projects" className='container mx-auto'>
                 <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>
                 Featured Projects
@@ -688,6 +718,7 @@ const ProjectSlideshow = ({ projects }) => {
         </div>
     );
 };
+
 
 const ProjectDisplay = ({ projects }) => {
     return (

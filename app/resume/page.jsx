@@ -24,6 +24,7 @@ import {
 
 import {
     SiFlutter,
+    SiAstro,
     SiSupabase,
     SiNextdotjs,
     SiDart,
@@ -51,6 +52,11 @@ import {
     SiMysql,
     SiR,
     SiTableau,
+    SiExpo,
+    SiPhp,
+    SiDocker,
+    SiGithub,
+    SiStackoverflow,
 } from "react-icons/si";
 
 // About data
@@ -98,10 +104,16 @@ const experience = {
     description: "I bring a blend of technical expertise and customer-focused skills, excelling in software development & team-work. My unique perspective allows me to create intuitive, user-friendly solutions.",
     items: [
         {
+            imgSrc: '/assets/work/VRAIn_Main_Logo.png',
+            company: "VRAIn Medical",
+            position: "Software Developer & Image Editing",
+            duration: "2025-present",
+        },
+        {
             imgSrc: '/assets/work/Cupra-SEAT.png',
             company: "SEAT-Cupra",
             position: "ML Software Developer Intern",
-            duration: "2024-present",
+            duration: "2024-2025",
         },
         {
             imgSrc: '/assets/work/Cupra-SEAT.png',
@@ -150,89 +162,47 @@ const skills = {
     title: "My Skills",
     description: "Experience in softwares, languages, extensions, and libraries from all corners of the tech space. Work in Full Stack Development, UI/UX Design, Video Games, & 3D Art means I bring a lot to the table!",
     categories: {
-        "Front-End": [
-            {
-                icon: <FaHtml5 />,
-                name: "HTML 5",
-            },
-            {
-                icon: <FaCss3 />,
-                name: "CSS 3",
-            },
-            {
-                icon: <FaJs />,
-                name: "JavaScript",
-            },
-            {
-                icon: <FaReact />,
-                name: "React",
-            },
-            {
-                icon: <SiNextdotjs />,
-                name: "Next.js",
-            },
-            {
-                icon: <SiFlutter />,
-                name: "Flutter",
-            },
-            {
-                icon: <SiDart />,
-                name: "Dart",
-            },
-            {
-                icon: <SiTailwindcss />,
-                name: "Tailwind CSS",
-            },
+        "Code": [
+            { icon: <FaPython />, name: "Python" },
+            { icon: <FaCuttlefish />, name: "C++" },
+            { icon: <SiJavascript />, name: "JavaScript" },
+            { icon: <SiDart />, name: "Dart" },
+            { icon: <SiPhp />, name: "PHP" },
+            { icon: <FaHtml5 />, name: "HTML 5" },
+            { icon: <FaCss3 />, name: "CSS 3" },
         ],
-        "Back-End": [
-            {
-                icon: <FaNode />,
-                name: "Node.js",
-            },
-            {
-                icon: <SiSupabase />,
-                name: "Supabase",
-            },
-            {
-                icon: <SiFirebase />,
-                name: "Firebase",
-            },
-            {
-                icon: <SiPostgresql />,
-                name: "PostgreSQL",
-            },
-            {
-                icon: <SiStripe />,
-                name: "Stripe",
-            },
-            {
-                icon: <SiRapid />,
-                name: "RapidAPI",
-            },
+        "Frameworks": [
+            { icon: <FaReact />, name: "React" },
+            { icon: <SiNextdotjs />, name: "Next.js" },
+            { icon: <SiFlutter />, name: "Flutter" },
+            { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+            { icon: <SiAstro />, name: "Astro" },
+            { icon: <SiExpo />, name: "Expo" },
         ],
-        "Languages": [
-            {
-                icon: <FaPython />,
-                name: "Python",
-            },
-            {
-                icon: <FaCuttlefish />,
-                name: "C++",
-            },
-            {
-                icon: <SiJavascript />,
-                name: "JavaScript",
-            },
-        ],
+        "DevOps": [ // APIs, backends, platforms
+                { icon: <FaNode />, name: "Node.js" },
+                { icon: <SiFirebase />, name: "Firebase" },
+                { icon: <SiSupabase />, name: "Supabase" },
+                { icon: <SiStripe />, name: "Stripe" },
+                { icon: <SiRapid />, name: "RapidAPI" },
+                { icon: <SiPostgresql />, name: "PostgreSQL" },
+                { icon: <SiMysql />, name: "MySQL" },
+                { icon: <SiDocker />, name: "Docker" },
+                { icon: <CgVercel />, name: "Vercel" },
+            ],
         "Game-Dev": [
-            {
-                icon: <SiUnity />,
-                name: "Unity",
-            },
-            {
-                icon: <SiUnrealengine />,
-                name: "Unreal Engine",
-            },
+            { icon: <SiUnity />, name: "Unity" },
+            { icon: <SiUnrealengine />, name: "Unreal Engine" },
+            { icon: <SiOpengl />, name: "OpenGL" },
+            { icon: <SiLibrarything />, name: "GLM" },
+            { icon: <SiLibrarything />, name: "ImGUI" },
+            { icon: <SiLibrarything />, name: "Assimp" },
+            { icon: <SiLibrarything />, name: "GLEW" },
+            { icon: <SiLibrarything />, name: "SDL1&2" },
+            { icon: <GiOwl />, name: "Eigen" },
+            { icon: <SiPushbullet />, name: "Bullet3D Physics" },
+            { icon: <SiBox />, name: "Box2D Physics" },
+            { icon: <SiLibrarything />, name: "devIL" },
         ],
         "Art": [
             {
@@ -268,83 +238,15 @@ const skills = {
                 name: "ToonBoom Harmony",
             },
         ],
-        "Data": [
-            {
-                icon: <SiMysql />,
-                name: "MySQL",
-            },
-            {
-                icon: <SiR />,
-                name: "R",
-            },
-            {
-                icon: <PiMicrosoftExcelLogo />,
-                name: "Excel",
-            },
-            {
-                icon: <SiTableau />,
-                name: "Tableau",
-            },
-        ],
-        "Libraries": [
-            {
-                icon: <SiOpengl />,
-                name: "OpenGL",
-            },
-            {
-                icon: <SiPushbullet />,
-                name: "Bullet3D Physics",
-            },
-            {
-                icon: <GiOwl />,
-                name: "Eigen",
-            },
-            {
-                icon: <SiBox />,
-                name: "Box2D Physics",
-            },
-            {
-                icon: <SiLibrarything />,
-                name: "SDL1&2",
-            },
-            {
-                icon: <SiLibrarything />,
-                name: "GLM",
-            },
-            {
-                icon: <SiLibrarything />,
-                name: "ImGUI",
-            },
-            {
-                icon: <SiLibrarything />,
-                name: "Assimp",
-            },
-            {
-                icon: <SiLibrarything />,
-                name: "GLEW",
-            },
-            {
-                icon: <SiLibrarything />,
-                name: "devIL",
-            },
-        ],
-        "IDE's": [
-            {
-                icon: <VscVscode />,
-                name: "VS Code",
-            },
-            {
-                icon: <SiVisualstudio />,
-                name: "Visual Studio",
-            },
-            {
-                icon: <SiAndroidstudio />,
-                name: "Android Studio",
-            },
-            {
-                icon: <SiPycharm />,
-                name: "Pycharm",
-            },
+        "Tools": [ // IDEs & utilities
+            { icon: <VscVscode />, name: "VS Code" },
+            { icon: <SiVisualstudio />, name: "Visual Studio" },
+            { icon: <SiAndroidstudio />, name: "Android Studio" },
+            { icon: <SiPycharm />, name: "Pycharm" },
+            { icon: <SiGithub />, name: "Github" },
+            { icon: <SiStackoverflow />, name: "StackOverflow" },
+            { icon: <PiOpenAiLogo />, name: "ChatGPT" },
+            { icon: <BsMicrosoft/>, name: "Windows" },
         ],
     },
 };
@@ -355,8 +257,9 @@ import { motion } from "framer-motion";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipProvider } from "@/components/ui/tooltip";
 import { TooltipContent, TooltipTrigger } from "@radix-ui/react-tooltip";
-import { BsFileExcel } from 'react-icons/bs';
-import { PiMicrosoftExcelLogo } from 'react-icons/pi';
+import { BsFileExcel, BsMicrosoft } from 'react-icons/bs';
+import { PiMicrosoftExcelLogo, PiOpenAiLogo } from 'react-icons/pi';
+import { CgVercel } from 'react-icons/cg';
 
 const Resume = () => {
     return (
