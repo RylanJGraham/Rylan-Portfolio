@@ -62,13 +62,13 @@ const ProjectStackDisplay = ({ projects }) => {
     return (
         <div className="flex flex-col gap-12">
             {projects.map((project, index) => (
-                <div key={index} className="relative w-full h-[400px] rounded-[20px] overflow-hidden group">
+                <div key={index} className="relative w-full h-[460px] rounded-[20px] overflow-hidden group">
                     {/* Image */}
                     <Image
                         src={project.image}
                         alt={project.title}
                         fill
-                        className="object-cover rounded-[20px] transition-all duration-500"
+                        className="object-fit rounded-[20px] transition-all duration-500"
                         unoptimized
                     />
 

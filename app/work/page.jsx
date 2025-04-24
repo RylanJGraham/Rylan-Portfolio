@@ -14,6 +14,14 @@ import { CgWebsite } from "react-icons/cg";
 import WorkNav from "../components/WorkNav"; // adjust path as needed
 import TFGDisplay from "../components/TFG"; // adjust path as needed
 import ProjectStackDisplay from "../components/ProjectStackDisplay"; // adjust path as needed
+import {
+    FaBook,
+    FaMobileAlt,
+    FaGlobe,
+    FaGamepad,
+    FaBuilding,
+    FaCode,
+  } from 'react-icons/fa';
 
 
 
@@ -206,6 +214,16 @@ const projects3 = [
         image: "/assets/work/PrimaveraShort.png",
         live: "https://www.figma.com/proto/Lw3BcdaDKPdpsI7yrEcaTz/Primavera-Pulse?node-id=2-545&t=TqmqKKVTSYVCKREP-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A545&show-proto-sidebar=1",
         github: "https://docs.google.com/presentation/d/e/2PACX-1vQ4OOGAp8degVyu6s6ZQam5bzvV003IzNlAJzUXgv6xE5x6Fnj0sUQ70bbtuGCEAG_2jJ-cnFsA_DI3/pub?start=false&loop=false&delayms=3000",
+    },
+    {
+        num: "02",
+        category: "Beta Release",
+        title: "CulinARy",
+        description: "CulinARy is a revolutionary Augmented Reality ",
+        stack: [{ name: "Unity" }, { name: "C++" }, { name: "C#" }, { name: "Vuforia AR" }, { name: "Firebase" },],
+        image: "/assets/work/culinARyDEMO.png",
+        live: "https://docs.google.com/presentation/d/e/2PACX-1vR9q7x3w2LP341kqw8nD46yVIxdH2BqrM2SisEVlhsX0PatrdA16s_s5U2EJNFikF_v3SLrOPccUsze/pub?start=true&loop=false&delayms=10000",
+        github: "https://github.com/RylanJGraham/CulinARy",
     },
     {
         num: "02",
@@ -516,25 +534,39 @@ const Work = () => {
         animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
         className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
       >
-        <WorkNav />
+        <div className="container mx-auto mb-2">
+        <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+                Projects
+        </div>
+        </div>
+        
   
         <Tabs defaultValue="thesis" className="w-full">
           {/* Top-Level Tab Buttons in a Row */}
-          <TabsList className="flex justify-center flex-wrap gap-4 mb-12">
-            <TabsTrigger value="thesis">Thesis Project</TabsTrigger>
-            <TabsTrigger value="apps">Apps</TabsTrigger>
-            <TabsTrigger value="web">Web</TabsTrigger>
-            <TabsTrigger value="games">Video Games</TabsTrigger>
-            <TabsTrigger value="professional">Professional</TabsTrigger>
-            <TabsTrigger value="data">Data Engineering</TabsTrigger>
-          </TabsList>
+          <TabsList className="flex flex-col sm:flex-row justify-center items-center sm:items-stretch flex-wrap gap-4 mb-2">
+            <TabsTrigger className="w-44 h-12 text-center flex items-center justify-center gap-2 text-md" value="thesis">
+                <FaBook className="text-lg" /> Thesis Project
+            </TabsTrigger>
+            <TabsTrigger className="w-44 h-12 text-center flex items-center justify-center gap-2 text-md" value="apps">
+                <FaMobileAlt className="text-lg" /> Apps
+            </TabsTrigger>
+            <TabsTrigger className="w-44 h-12 text-center flex items-center justify-center gap-2 text-md" value="web">
+                <FaGlobe className="text-lg" /> Web
+            </TabsTrigger>
+            <TabsTrigger className="w-44 h-12 text-center flex items-center justify-center gap-2 text-md" value="games">
+                <FaGamepad className="text-lg" /> Video Games
+            </TabsTrigger>
+            <TabsTrigger className="w-44 h-12 text-center flex items-center justify-center gap-2 text-md" value="professional">
+                <FaBuilding className="text-lg" /> Industry
+            </TabsTrigger>
+            <TabsTrigger className="w-48 h-12 text-center flex items-center justify-center gap-2 text-md" value="data">
+                <FaCode className="text-lg" /> Software
+            </TabsTrigger>
+            </TabsList>
   
           {/* Thesis Project */}
           <TabsContent value="thesis">
             <div className="container mx-auto mb-24">
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
-                Final Degree Project
-              </div>
               <div className="flex items-center my-4">
                 <div className="flex-grow h-px bg-accent"></div>
               </div>
@@ -543,24 +575,22 @@ const Work = () => {
           </TabsContent>
   
           <TabsContent value="apps">
-  <div className="container mx-auto">
-    <div className="text-8xl font-extrabold text-transparent text-outline">Apps</div>
-    <div className="flex items-center my-4">
-      <div className="flex-grow h-px bg-accent"></div>
-    </div>
-    <ProjectStackDisplay projects={projects3} />
-  </div>
-</TabsContent>
+            <div className="container mx-auto">
+                <div className="flex items-center my-4">
+                <div className="flex-grow h-px bg-accent"></div>
+                </div>
+                <ProjectStackDisplay projects={projects3} />
+            </div>
+            </TabsContent>
 
-<TabsContent value="web">
-  <div className="container mx-auto">
-    <div className="text-8xl font-extrabold text-transparent text-outline">Web</div>
-    <div className="flex items-center my-4">
-      <div className="flex-grow h-px bg-accent"></div>
-    </div>
-    <ProjectStackDisplay projects={projects3} />
-  </div>
-</TabsContent>
+            <TabsContent value="web">
+            <div className="container mx-auto">
+                <div className="flex items-center my-4">
+                <div className="flex-grow h-px bg-accent"></div>
+                </div>
+                <ProjectStackDisplay projects={projects3} />
+            </div>
+            </TabsContent>
 
 {/* ...repeat for other categories: games, professional, data */}
   
