@@ -206,12 +206,24 @@ const projects2 = [
 
 const projects3 = [
     {
+        num: "02",
+        category: "Video Game Project",
+        title: "Rauxa",
+        description: "Terranex is a cutting-edge farm management platform designed to tackle the challenges small and medium-sized farms face in Catalonia, Spain.",
+        stack: [{ name: "Microsoft Excel" }, { name: "Google Slides" }, { name: "Figma" }, { name: "Photoshop" }, { name: "React" },],
+        image: "/assets/work/RauxaDemo.png",
+        icon: "/assets/work/TFG.png", // ✅ new field
+        live: "https://shadow-wizard-games.github.io/Alien-Nemesis-Website/index.html",
+        github: "https://github.com/Shadow-Wizard-Games/TheOneEngine",
+    },
+    {
         num: "01",
         category: "UI/UX Design Project",
         title: "Primavera Pulse",
         description: "Primavera Pulse serves as a gamified app companion for the global music festival: Primavera Sound. Using gamified mechanics users can explore & enjoy the festival more, with nice rewards! Development is currently in the UI Demo stage, attached below is the figma prototype!",
         stack: [{ name: "Figma" }, { name: "Photoshop" }, { name: "Excel" }, { name: "GoogleSlides" }],
         image: "/assets/work/PrimaveraShort.png",
+        icon: "/assets/work/PrimaveraIcon.png", // ✅ new field
         live: "https://www.figma.com/proto/Lw3BcdaDKPdpsI7yrEcaTz/Primavera-Pulse?node-id=2-545&t=TqmqKKVTSYVCKREP-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A545&show-proto-sidebar=1",
         github: "https://docs.google.com/presentation/d/e/2PACX-1vQ4OOGAp8degVyu6s6ZQam5bzvV003IzNlAJzUXgv6xE5x6Fnj0sUQ70bbtuGCEAG_2jJ-cnFsA_DI3/pub?start=false&loop=false&delayms=3000",
     },
@@ -226,6 +238,26 @@ const projects3 = [
         github: "https://github.com/RylanJGraham/CulinARy",
     },
     {
+        num: "03",
+        category: "UI/UX Design Project",
+        title: "Minted",
+        description: "Minted is an in-production ticket resell application for students available on both IOS & Android devices. The product is an application that allows users to re-sell their ticket entries to clubs, concerts, private events & more, all in an easy to use and intuitive way. ",
+        stack: [{ name: "FlutterFlow" }, { name: "Firebase" }, { name: "Stripe" }, { name: "Google API's" }],
+        image: "/assets/work/MintedDEMO.png",
+        live: "https://docs.google.com/presentation/d/e/2PACX-1vTE381nkor09xuH4XrNJQyMgvnPa0dNorb1Lkd6aeM6d2nayW3PBJdV_CPzFFFmdpYtnty-5qO9ZF6W/pub?start=false&loop=false&delayms=10000",
+        github: "https://docs.google.com/presentation/d/e/2PACX-1vTE381nkor09xuH4XrNJQyMgvnPa0dNorb1Lkd6aeM6d2nayW3PBJdV_CPzFFFmdpYtnty-5qO9ZF6W/pub?start=false&loop=false&delayms=10000",
+    },
+    {
+        num: "04",
+        category: "Beta Release",
+        title: "WeatherTune",
+        description: "WeatherTune is a sleek and intuitive weather forecast app developed by a team of four students from CITM-UPC University. Stay ahead of the weather with accurate forecasts and a delightful user experience.",
+        stack: [{ name: "Flutter" }, { name: "Dart" }, { name: "Figma" }, { name: "Firebase" }, { name: "BLOC" }, { name: "Rapid API" }, { name: "Google API" }],
+        image: "/assets/work/WeatherTune2.png",
+        live: "https://github.com/RylanJGraham/WeatherTune",
+        github: "https://github.com/RylanJGraham/WeatherTune",
+    },
+    {
         num: "02",
         category: "Video Game Project",
         title: "Terranex Agriculture Platform",
@@ -235,16 +267,7 @@ const projects3 = [
         live: "https://shadow-wizard-games.github.io/Alien-Nemesis-Website/index.html",
         github: "https://github.com/Shadow-Wizard-Games/TheOneEngine",
     },
-    {
-        num: "03",
-        category: "UI/UX Design Project",
-        title: "Minted",
-        description: "Minted is an in-production ticket resell application for students available on both IOS & Android devices. The product is an application that allows users to re-sell their ticket entries to clubs, concerts, private events & more, all in an easy to use and intuitive way. ",
-        stack: [{ name: "FlutterFlow" }, { name: "Firebase" }, { name: "Stripe" }, { name: "Google API's" }],
-        image: "/assets/work/minted.png",
-        live: "https://docs.google.com/presentation/d/e/2PACX-1vTE381nkor09xuH4XrNJQyMgvnPa0dNorb1Lkd6aeM6d2nayW3PBJdV_CPzFFFmdpYtnty-5qO9ZF6W/pub?start=false&loop=false&delayms=10000",
-        github: "https://docs.google.com/presentation/d/e/2PACX-1vTE381nkor09xuH4XrNJQyMgvnPa0dNorb1Lkd6aeM6d2nayW3PBJdV_CPzFFFmdpYtnty-5qO9ZF6W/pub?start=false&loop=false&delayms=10000",
-    },
+    
     {
         num: "04",
         category: "UI/UX Design Project",

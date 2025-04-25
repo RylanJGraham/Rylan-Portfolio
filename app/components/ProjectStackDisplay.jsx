@@ -62,7 +62,7 @@ const ProjectStackDisplay = ({ projects }) => {
     return (
         <div className="flex flex-col gap-12">
             {projects.map((project, index) => (
-                <div key={index} className="relative w-full h-[460px] rounded-[20px] overflow-hidden group">
+                <div key={index} className="relative w-full h-[400px] rounded-[20px] overflow-hidden group">
                     {/* Image */}
                     <Image
                         src={project.image}
@@ -96,10 +96,21 @@ const ProjectStackDisplay = ({ projects }) => {
                         )}
                     </div>
 
-                    {/* Title (always visible, independent slide up) */}
-                    <h2 className="absolute bottom-6 left-6 text-3xl font-extrabold text-transparent text-outline z-30 transition-all duration-500 group-hover:bottom-[180px]">
-                        {project.title}
-                    </h2>
+                    {/* Title Container with Icon */}
+                    <div className="absolute bottom-6 left-6 z-30 transition-all duration-500 group-hover:bottom-[180px]">
+                        <div className="flex items-center gap-4 bg-black/70 px-4 py-2 rounded-xl shadow-lg">
+                            {project.icon && (
+                                <Image
+                                    src={project.icon}
+                                    alt={`${project.title} icon`}
+                                    width={80}
+                                    height={80}
+                                    className="rounded-md"
+                                />
+                            )}
+                            <h2 className="text-white text-3xl font-bold">{project.title}</h2>
+                        </div>
+                    </div>
 
                     {/* Slide-up Content Overlay */}
                     <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 text-white pt-[220px] px-6 pb-6 z-20">
