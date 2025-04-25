@@ -13,7 +13,8 @@ import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { CgWebsite } from "react-icons/cg";
 import WorkNav from "../components/WorkNav"; // adjust path as needed
 import TFGDisplay from "../components/TFG"; // adjust path as needed
-import ProjectStackDisplay from "../components/ProjectStackDisplay"; // adjust path as needed
+import AppStackDisplay from "../components/AppStackDisplay"; // adjust path as needed
+import WebStackDisplay from "../components/WebStackDisplay"; // adjust path as needed
 import {
     FaBook,
     FaMobileAlt,
@@ -141,64 +142,39 @@ const projects1 = [
 
 const projects2 = [
     {
+        num: "02",
+        category: "3D Art & Animation",
+        title: "Qatar 2022",
+        description: "The Qatar 2022 Data Visualization is a web application created to demonstrate Argentina's path to victory in the 2022 Fifa World Cup from a data standpoint. Developed using React, in combination with Material UI, X-Charts, and ReCharts, the web app hopes to provide users with a clean and intuitive data journey throughout the tournament. Check it out!",
+        stack: [{ name: "Vercel" }, { name: "React" }, { name: "TypeScript" }, { name: "Material" }, { name: "XCharts" }, { name: "Kaggle" }, { name: "Excel" }, { name: "Figma" },],
+        image: "/assets/work/QatarDEMO.png",
+        status: "Live",
+        icon: "/assets/work/QatarLogo.png", // ✅ new field
+        live: "https://worldcup2022datavisualized.vercel.app",
+        github: "https://github.com/RylanJGraham/world_cup_2022_datavisualized",
+    },
+    {
         num: "01",
         category: "Beta Release",
         title: "PokéRest",
+        status: "Live",
+        icon: "/assets/work/PokerestIcon.png", // ✅ new field
         description: "PokéRest is a full-stack web application created in 6 hrs using Next.js, TypeScript, Shadcn-UI, and restAPI calls to PokeAPI. The project features dynamic routing, search filtering, clean UI, and optimized API retrievals to ensure a functional and superb user experience.",
-        stack: [{ name: "Next.js" }, { name: "TypeScript" }, { name: "Shadcn" }, { name: "restAPI" }, { name: "Tailwind" }],
+        stack: [{ name: "Vercel" }, { name: "Nextjs" }, { name: "TypeScript" }, { name: "Shadcn" }, { name: "restAPI" }, { name: "Tailwind" }],
         image: "/assets/work/poke.png",
         live: "https://pokerest-app.vercel.app/",
         github: "https://github.com/RylanJGraham/pokerest",
     },
     {
-        num: "02",
-        category: "3D Art & Animation",
-        title: "Qatar 2022 Data-Vis",
-        description: "The Qatar 2022 Data Visualization is a web application created to demonstrate Argentina's path to victory in the 2022 Fifa World Cup from a data standpoint. Developed using React, in combination with Material UI, X-Charts, and ReCharts, the web app hopes to provide users with a clean and intuitive data journey throughout the tournament. Check it out!",
-        stack: [{ name: "React" }, { name: "TypeScript" }, { name: "Material UI" }, { name: "X-Charts" }, { name: "ReCharts" }, { name: "Kaggle" }, { name: "Excel" }, { name: "Figma" },],
-        image: "/assets/work/QatarFull.png",
-        live: "https://worldcup2022datavisualized.vercel.app",
-        github: "https://github.com/RylanJGraham/world_cup_2022_datavisualized",
-    },
-    {
-        num: "03",
-        category: "Beta Release",
-        title: "CulinARy",
-        description: "WeatherTune is a sleek and intuitive weather forecast app developed by a team of four students from CITM-UPC University. Stay ahead of the weather with accurate forecasts and a delightful user experience.",
-        stack: [{ name: "Unity" }, { name: "C++" }, { name: "C#" }, { name: "Vuforia AR" }, { name: "Firebase" },],
-        image: "/assets/work/culinary.png",
-        live: "https://docs.google.com/presentation/d/e/2PACX-1vR9q7x3w2LP341kqw8nD46yVIxdH2BqrM2SisEVlhsX0PatrdA16s_s5U2EJNFikF_v3SLrOPccUsze/pub?start=true&loop=false&delayms=10000",
-        github: "https://github.com/RylanJGraham/CulinARy",
-    },
-    {
-        num: "04",
-        category: "Beta Release",
-        title: "WeatherTune",
-        description: "WeatherTune is a sleek and intuitive weather forecast app developed by a team of four students from CITM-UPC University. Stay ahead of the weather with accurate forecasts and a delightful user experience.",
-        stack: [{ name: "Flutter" }, { name: "Dart" }, { name: "Figma" }, { name: "Firebase" }, { name: "BLOC" }, { name: "Rapid API" }, { name: "Google API" }],
-        image: "/assets/work/WeatherTune2.png",
-        live: "https://github.com/RylanJGraham/WeatherTune",
-        github: "https://github.com/RylanJGraham/WeatherTune",
-    },
-    {
         num: "05",
         category: "Beta Release",
         title: "SummAIrize",
+        status: "Live",
         description: "Article Summarizer built using OpenAI GPT model, Takes article url and provides a concise summary.​",
-        stack: [{ name: "React" }, { name: "Open-AI" }, { name: "Vite" }, { name: "RTK Query" }, { name: "Tailwind" }, { name: "JavaScript" },],
+        stack: [{ name: "React" }, { name: "OpenAI" }, { name: "Vite" }, { name: "RTKQuery" }, { name: "Tailwind" }, { name: "JavaScript" },],
         image: "/assets/work/summaraize.gif",
         live: "https://iridescent-blancmange-7bcd57.netlify.app/",
         github: "https://github.com/RylanJGraham/AI-ArticleSummarizer",
-    },
-    {
-        num: "06",
-        category: "Beta Release",
-        title: "AI Voice Assistant (In-Progress)",
-        description: "Mobile application integrated with voice recognition & GPT4 and DallE API user prompting. Ask away!",
-        stack: [{ name: "Flutter" }, { name: "Dart" }, { name: "Rapid API" }, { name: "JavaScript" }, { name: "Dall-E" }, { name: "OpenAI" }, ],
-        image: "/assets/work/voice.png",
-        live: "https://github.com/RylanJGraham/AI-Assistant",
-        github: "https://github.com/RylanJGraham/AI-Assistant",
     },
     
     // Add more projects for this category if needed
@@ -209,10 +185,11 @@ const projects3 = [
         num: "02",
         category: "Video Game Project",
         title: "Rauxa",
-        description: "Terranex is a cutting-edge farm management platform designed to tackle the challenges small and medium-sized farms face in Catalonia, Spain.",
-        stack: [{ name: "Microsoft Excel" }, { name: "Google Slides" }, { name: "Figma" }, { name: "Photoshop" }, { name: "React" },],
+        description: "The Tinder for Spontaneous Meetups! Rauxa is an innovative mobile app that helps users find events and connect with people based on their preferences and location. Built with a focus on real-time social interactions, event-based matchmaking, and user-friendly experiences, Rauxa aims to simplify event discovery and enhance social engagement. Rauxa aims to be Barcelona's student, tourist, and local's choice in social apps",
+        stack: [{ name: "Expo" }, { name: "Firebase" }, { name: "Github" }, { name: "React" }, { name: "Figma" }, { name: "Gemini" },],
         image: "/assets/work/RauxaDemo.png",
         icon: "/assets/work/TFG.png", // ✅ new field
+        status: "In-Development",
         live: "https://shadow-wizard-games.github.io/Alien-Nemesis-Website/index.html",
         github: "https://github.com/Shadow-Wizard-Games/TheOneEngine",
     },
@@ -223,6 +200,7 @@ const projects3 = [
         description: "Primavera Pulse serves as a gamified app companion for the global music festival: Primavera Sound. Using gamified mechanics users can explore & enjoy the festival more, with nice rewards! Development is currently in the UI Demo stage, attached below is the figma prototype!",
         stack: [{ name: "Figma" }, { name: "Photoshop" }, { name: "Excel" }, { name: "GoogleSlides" }],
         image: "/assets/work/PrimaveraShort.png",
+        status: "Pitching",
         icon: "/assets/work/PrimaveraIcon.png", // ✅ new field
         live: "https://www.figma.com/proto/Lw3BcdaDKPdpsI7yrEcaTz/Primavera-Pulse?node-id=2-545&t=TqmqKKVTSYVCKREP-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2%3A545&show-proto-sidebar=1",
         github: "https://docs.google.com/presentation/d/e/2PACX-1vQ4OOGAp8degVyu6s6ZQam5bzvV003IzNlAJzUXgv6xE5x6Fnj0sUQ70bbtuGCEAG_2jJ-cnFsA_DI3/pub?start=false&loop=false&delayms=3000",
@@ -231,9 +209,11 @@ const projects3 = [
         num: "02",
         category: "Beta Release",
         title: "CulinARy",
+        status: "Published",
         description: "CulinARy is a revolutionary Augmented Reality ",
-        stack: [{ name: "Unity" }, { name: "C++" }, { name: "C#" }, { name: "Vuforia AR" }, { name: "Firebase" },],
+        stack: [{ name: "Unity" }, { name: "C" }, { name: "ar" }, { name: "Firebase" },],
         image: "/assets/work/culinARyDEMO.png",
+        icon: "/assets/work/CulinARyLogo.png", // ✅ new field
         live: "https://docs.google.com/presentation/d/e/2PACX-1vR9q7x3w2LP341kqw8nD46yVIxdH2BqrM2SisEVlhsX0PatrdA16s_s5U2EJNFikF_v3SLrOPccUsze/pub?start=true&loop=false&delayms=10000",
         github: "https://github.com/RylanJGraham/CulinARy",
     },
@@ -241,9 +221,11 @@ const projects3 = [
         num: "03",
         category: "UI/UX Design Project",
         title: "Minted",
+        status: "Pitching",
         description: "Minted is an in-production ticket resell application for students available on both IOS & Android devices. The product is an application that allows users to re-sell their ticket entries to clubs, concerts, private events & more, all in an easy to use and intuitive way. ",
-        stack: [{ name: "FlutterFlow" }, { name: "Firebase" }, { name: "Stripe" }, { name: "Google API's" }],
+        stack: [{ name: "FlutterFlow" }, { name: "Firebase" }, { name: "Stripe" }, { name: "maps" }],
         image: "/assets/work/MintedDEMO.png",
+        icon: "/assets/work/MintedLogo.png", // ✅ new field
         live: "https://docs.google.com/presentation/d/e/2PACX-1vTE381nkor09xuH4XrNJQyMgvnPa0dNorb1Lkd6aeM6d2nayW3PBJdV_CPzFFFmdpYtnty-5qO9ZF6W/pub?start=false&loop=false&delayms=10000",
         github: "https://docs.google.com/presentation/d/e/2PACX-1vTE381nkor09xuH4XrNJQyMgvnPa0dNorb1Lkd6aeM6d2nayW3PBJdV_CPzFFFmdpYtnty-5qO9ZF6W/pub?start=false&loop=false&delayms=10000",
     },
@@ -251,9 +233,11 @@ const projects3 = [
         num: "04",
         category: "Beta Release",
         title: "WeatherTune",
+        status: "Published",
         description: "WeatherTune is a sleek and intuitive weather forecast app developed by a team of four students from CITM-UPC University. Stay ahead of the weather with accurate forecasts and a delightful user experience.",
-        stack: [{ name: "Flutter" }, { name: "Dart" }, { name: "Figma" }, { name: "Firebase" }, { name: "BLOC" }, { name: "Rapid API" }, { name: "Google API" }],
-        image: "/assets/work/WeatherTune2.png",
+        stack: [{ name: "Flutter" }, { name: "Dart" }, { name: "Figma" }, { name: "Firebase" }, { name: "Rapid" }, { name: "maps" }],
+        image: "/assets/work/WeatherDEMO.png",
+        icon: "/assets/work/WeatherLogo.png", // ✅ new field
         live: "https://github.com/RylanJGraham/WeatherTune",
         github: "https://github.com/RylanJGraham/WeatherTune",
     },
@@ -261,9 +245,11 @@ const projects3 = [
         num: "02",
         category: "Video Game Project",
         title: "Terranex Agriculture Platform",
+        status: "Pitching",
         description: "Terranex is a cutting-edge farm management platform designed to tackle the challenges small and medium-sized farms face in Catalonia, Spain.",
-        stack: [{ name: "Microsoft Excel" }, { name: "Google Slides" }, { name: "Figma" }, { name: "Photoshop" }, { name: "React" },],
+        stack: [{ name: "Excel" }, { name: "GoogleSlides" }, { name: "Figma" }, { name: "Photoshop" },],
         image: "/assets/work/TerranexShort.png",
+        icon: "/assets/work/TerranexLogo.png", // ✅ new field
         live: "https://shadow-wizard-games.github.io/Alien-Nemesis-Website/index.html",
         github: "https://github.com/Shadow-Wizard-Games/TheOneEngine",
     },
@@ -272,8 +258,9 @@ const projects3 = [
         num: "04",
         category: "UI/UX Design Project",
         title: "Edu.Cation",
+        status: "In-Development",
         description: "Edu.Cation is a learning app that helps to revolutionize the education space. Incorporating fun & practicality to help teachers send their learning home.",
-        stack: [{ name: "Figma" }, { name: "Google Slides" }],
+        stack: [{ name: "Figma" }, { name: "GoogleSlides" }],
         image: "/assets/work/edu.cation2.png",
         live: "https://docs.google.com/presentation/d/e/2PACX-1vTJUC_VmrFcPBi26BB6Ekuro1cC8ffbbWhU_r6R3gdbUV7gaN4-O11v5V2Rk2JsAF9EY0uyH0iqoWBE/pub?start=false&loop=false&delayms=10000",
         github: "https://docs.google.com/presentation/d/e/2PACX-1vTJUC_VmrFcPBi26BB6Ekuro1cC8ffbbWhU_r6R3gdbUV7gaN4-O11v5V2Rk2JsAF9EY0uyH0iqoWBE/pub?start=false&loop=false&delayms=10000",
@@ -567,9 +554,6 @@ const Work = () => {
         <Tabs defaultValue="thesis" className="w-full">
           {/* Top-Level Tab Buttons in a Row */}
           <TabsList className="flex flex-col sm:flex-row justify-center items-center sm:items-stretch flex-wrap gap-4 mb-2">
-            <TabsTrigger className="w-44 h-12 text-center flex items-center justify-center gap-2 text-md" value="thesis">
-                <FaBook className="text-lg" /> Thesis Project
-            </TabsTrigger>
             <TabsTrigger className="w-44 h-12 text-center flex items-center justify-center gap-2 text-md" value="apps">
                 <FaMobileAlt className="text-lg" /> Apps
             </TabsTrigger>
@@ -587,22 +571,12 @@ const Work = () => {
             </TabsTrigger>
             </TabsList>
   
-          {/* Thesis Project */}
-          <TabsContent value="thesis">
-            <div className="container mx-auto mb-24">
-              <div className="flex items-center my-4">
-                <div className="flex-grow h-px bg-accent"></div>
-              </div>
-              <TFGDisplay projects={tfg} />
-            </div>
-          </TabsContent>
-  
           <TabsContent value="apps">
             <div className="container mx-auto">
                 <div className="flex items-center my-4">
                 <div className="flex-grow h-px bg-accent"></div>
                 </div>
-                <ProjectStackDisplay projects={projects3} />
+                <AppStackDisplay projects={projects3} />
             </div>
             </TabsContent>
 
@@ -611,7 +585,7 @@ const Work = () => {
                 <div className="flex items-center my-4">
                 <div className="flex-grow h-px bg-accent"></div>
                 </div>
-                <ProjectStackDisplay projects={projects3} />
+                <WebStackDisplay projects={projects2} />
             </div>
             </TabsContent>
 
