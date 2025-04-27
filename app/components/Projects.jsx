@@ -215,8 +215,6 @@ export const projects3 = [
         image: "/assets/work/Rauxademo.png",
         icon: "/assets/work/TFG.png", // ✅ new field
         status: "In-Development",
-        live: "https://shadow-wizard-games.github.io/Alien-Nemesis-Website/index.html",
-        github: "https://github.com/Shadow-Wizard-Games/TheOneEngine",
     },
     {
         num: "01",
