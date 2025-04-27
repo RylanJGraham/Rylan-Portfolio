@@ -138,7 +138,7 @@ export const projects1 = [
         status: "Released",
         description: "WindJammers replica game created as first video game project at CITM-UPC university. Created using C++, SDL2, and title original sprites.",
         stack: [{ name: "C" }, { name: "SDL2" }, { name: "Github" }, { name: "VisualStudio" },],
-        image: "/assets/work/WindJammers.png",
+        image: "/assets/work/Windjammers.png",
         icon: "/assets/work/WindJammersLogo.png", // ✅ new field
         live: "https://github.com/AdriaPm/RaceCarGame3D",
         github: "https://github.com/AdriaPm/RaceCarGame3D",
@@ -212,7 +212,7 @@ export const projects3 = [
         title: "Rauxa",
         description: "The Tinder for Spontaneous Meetups! Rauxa is an innovative mobile app that helps users find events and connect with people based on their preferences and location. Rauxa aims to be Barcelona's first choice in social apps",
         stack: [{ name: "Expo" }, { name: "Firebase" }, { name: "Github" }, { name: "React" }, { name: "Figma" }, { name: "Gemini" },],
-        image: "/assets/work/RauxaDemo.png",
+        image: "/assets/work/Rauxademo.png",
         icon: "/assets/work/TFG.png", // ✅ new field
         status: "In-Development",
         live: "https://shadow-wizard-games.github.io/Alien-Nemesis-Website/index.html",
@@ -237,7 +237,7 @@ export const projects3 = [
         status: "Published",
         description: "CulinARy is an Augmented Reality application destined for the restaurant business so the clients can take a look at the menu in 3D.",
         stack: [{ name: "Unity" }, { name: "C" }, { name: "ar" }, { name: "Firebase" },],
-        image: "/assets/work/culinARyDEMO.png",
+        image: "/assets/work/CulinARyDEMO.png",
         icon: "/assets/work/CulinARyLogo.png", // ✅ new field
         live: "https://docs.google.com/presentation/d/e/2PACX-1vR9q7x3w2LP341kqw8nD46yVIxdH2BqrM2SisEVlhsX0PatrdA16s_s5U2EJNFikF_v3SLrOPccUsze/pub?start=true&loop=false&delayms=10000",
         github: "https://github.com/RylanJGraham/CulinARy",
@@ -395,7 +395,7 @@ export const projects4 = [
         title: "Pixel Artwork",
         description: "Created character pixel artwork for Majora's mask 2D",
         stack: [{ name: "Aseprite" },],
-        image: "/assets/work/majora.png",
+        image: "/assets/work/Majora.png",
         live: "",
     },
     // Add more projects for this category if needed
