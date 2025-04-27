@@ -212,7 +212,7 @@ export const projects3 = [
         title: "Rauxa",
         description: "The Tinder for Spontaneous Meetups! Rauxa is an innovative mobile app that helps users find events and connect with people based on their preferences and location. Rauxa aims to be Barcelona's first choice in social apps",
         stack: [{ name: "Expo" }, { name: "Firebase" }, { name: "Github" }, { name: "React" }, { name: "Figma" }, { name: "Gemini" },],
-        image: "/assets/work/Rauxademo.png",
+        image: "/assets/work/Rauxa.png",
         icon: "/assets/work/TFG.png", // ✅ new field
         status: "In-Development",
     },
