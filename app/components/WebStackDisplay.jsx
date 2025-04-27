@@ -50,6 +50,7 @@ const techIcons = {
     vite: SiVite,
     rtkquery: SiReactquery,
     openai: PiOpenAiLogo,
+    visualstudio: SiVisualstudio,
 };
 
 const WebStackDisplay = ({ projects }) => {

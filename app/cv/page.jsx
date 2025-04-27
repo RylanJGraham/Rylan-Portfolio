@@ -116,7 +116,7 @@ const experience = {
             duration: "2024-2025",
         },
         {
-            imgSrc: '/assets/work/Cupra-SEAT.png',
+            imgSrc: '/assets/work/ctedraupc.png',
             company: "SEAT-Cupra UPC Catedra",
             position: "Gamified Car CO-OP Student Developer",
             duration: "2023-2024",

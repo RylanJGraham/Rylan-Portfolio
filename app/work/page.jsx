@@ -15,6 +15,7 @@ import WorkNav from "../components/WorkNav"; // adjust path as needed
 import TFGDisplay from "../components/TFG"; // adjust path as needed
 import AppStackDisplay from "../components/AppStackDisplay"; // adjust path as needed
 import WebStackDisplay from "../components/WebStackDisplay"; // adjust path as needed
+import VideoGameStackDisplay from "../components/VideoGameStackDisplay"; // adjust path as needed
 import {
     FaBook,
     FaMobileAlt,
@@ -22,7 +23,10 @@ import {
     FaGamepad,
     FaBuilding,
     FaCode,
+    FaBrush,
   } from 'react-icons/fa';
+import IndustryStackDisplay from '../components/IndustryStackDisplay';
+import ArtStackDisplay from '../components/ArtStackDisplay';
 
 
 
@@ -31,8 +35,10 @@ const projects1 = [
         num: "01",
         category: "Video Game Project",
         title: "Alien: Nemesis",
+        icon: "/assets/work/AlienLogo.png", // ✅ new field
+        status: "Published",
         description: "Alien: Nemesis is a fast paced shooter with exploration, narrative, & fast paced combat. Developed by Shadow Wizard Games Studios, a team of 23 students at CITM-UPC, on their proprietary game engine: TheOneEngine",
-        stack: [{ name: "C++" }, { name: "Maya" }, { name: "Adobe Substance" }, { name: "OpenGL" }, { name: "Photoshop" }, { name: "Figma" }, { name: "Wwise" }],
+        stack: [{ name: "C" }, { name: "Maya" }, { name: "Adobe" }, { name: "OpenGL" }, { name: "Photoshop" }, { name: "Figma" }, { name: "Wwise" }, { name: "Trello" }],
         image: "/assets/work/AlienNemesis.gif",
         live: "https://shadow-wizard-games.github.io/Alien-Nemesis-Website/index.html",
         github: "https://github.com/Shadow-Wizard-Games/TheOneEngine",
@@ -41,8 +47,10 @@ const projects1 = [
         num: "02",
         category: "Video Game Project",
         title: "HyperStrike",
+        icon: "/assets/work/HyperLogo.png", // ✅ new field
+        status: "In-Development",
         description: "HyperStrike is a fast-paced 5v5 multiplayer game where the players must score a ball inside the other team's goal while each player has a character with high mobility movement that allows players to run on the walls, obstacles, and much more in the stadium. The game is built using both UDP & TCP Protocols with interpolation, & predictive state synchronization",
-        stack: [{ name: "Unity Engine" }, { name: "UD-Protocol" }, { name: "TC-Protocol" }, { name: "Maya" }, { name: "Adobe Substance" }, { name: "Mixamo" },],
+        stack: [{ name: "Unity" }, { name: "UDP" }, { name: "TCP" }, { name: "Maya" }, { name: "Adobe" }, { name: "VisualStudio" }, { name: "Github" },],
         image: "/assets/work/HyperStrikeLogo.png",
         live: "https://github.com/Historn/NetworksProject",
         github: "https://github.com/Historn/NetworksProject",
@@ -51,9 +59,11 @@ const projects1 = [
         num: "03",
         category: "VertX Game Engine",
         title: "VertX Game Engine",
+        status: "Published Software",
         description: "Fully functional Game Engine developed using OpenGL framework, with additional libraries. Supports FBX rendering, texturing, Game Objects management, camera controls as of latest release.",
-        stack: [{ name: "C++" }, { name: "OpenGL" }, { name: "SDL2" }, { name: "GLEW" }, { name: "GLM" }, { name: "Assimp" }, { name: "ImGui" }, { name: "devIL" }, { name: "Visual Studio" }, { name: "Github" }, ],
+        stack: [{ name: "C" }, { name: "OpenGL" }, { name: "SDL2" }, { name: "VisualStudio" }, { name: "Github" }, ],
         image: "/assets/work/VertX.gif",
+        icon: "/assets/work/VertXLogo.png", // ✅ new field
         live: "https://citm-upc.github.io/VertX-Game-Engine/",
         github: "https://github.com/CITM-UPC/VertX-Game-Engine",
     },
@@ -61,19 +71,23 @@ const projects1 = [
         num: "04",
         category: "Game AI",
         title: "Game AI",
+        status: "Academic Demonstration",
         description: "Exercises in Unity Environments created to highlight usage of Game AI. Behaviors featured include Pathfinding, Random Wandering, Flocking, Behavior Bricks, and Camera Frustrum Detection.",
-        stack: [{ name: "C#" }, { name: "Unity" }, { name: "Maya" }, { name: "Python" }, { name: "Github" },],
+        stack: [{ name: "C" }, { name: "Unity" }, { name: "Maya" }, { name: "Python" }, { name: "Github" },],
         image: "/assets/work/gameai.gif",
+        icon: "/assets/work/AILogo.png", // ✅ new field
         live: "https://rylanjgraham.github.io/GameAI_Exercises/",
         github: "https://github.com/RylanJGraham/GameAI_Exercises",
     },
     {
         num: "05",
-        category: "Unity Audio Systems Demonstration",
-        title: "Unity Audio Systems Demonstration",
+        category: "Unity Audio Systems",
+        title: "Unity Audio",
+        status: "Academic Demonstration",
         description: "Unity scene demonstrating proper usage of spatial audio, track-blending, atmospheric audio, track-layer, audio-mixing, and region specific filtering.",
-        stack: [{ name: "C++" }, { name: "Unity" }, { name: "Github" }, { name: "Visual Studio" }, { name: "C#" }],
+        stack: [{ name: "C" }, { name: "Unity" }, { name: "Github" }, { name: "VisualStudio" },],
         image: "/assets/work/DigitalAudio.gif",
+        icon: "/assets/work/DigitalLogo.png", // ✅ new field
         live: "https://play.unity.com/mg/other/webgl-builds-404826",
         github: "https://github.com/AdriaPm/DigitalAudio_UnityScene",
     },
@@ -81,9 +95,11 @@ const projects1 = [
         num: "06",
         category: "Worms Replica",
         title: "Worms Replica",
+        status: "Released",
         description: "Worms game title replica. Physics Engine was original and created using classroom learnings. Concepts: Drag Force, Projectile Motion, Ballistics, & Gravitational Elements.",
-        stack: [{ name: "C++" }, { name: "SDL" }, { name: "Github" }, { name: "Visual Studio" }],
+        stack: [{ name: "C" }, { name: "SDL2" }, { name: "Github" }, { name: "VisualStudio" }],
         image: "/assets/work/Worms.png",
+        icon: "/assets/work/WormsIcon.png", // ✅ new field
         live: "https://github.com/Historn/WormsGameProject",
         github: "https://github.com/Historn/WormsGameProject",
     },
@@ -91,19 +107,23 @@ const projects1 = [
         num: "07",
         category: "The ToyBox",
         title: "The ToyBox",
+        status: "Released",
         description: "8 man RPG project, complete with fully operational UI, Combat, Exploration & more. Developed by hand drawn artwork. Expected Launch May 2023. Culminating Year 2 Degree Project.",
-        stack: [{ name: "C++" }, { name: "SDL" }, { name: "Github" }, { name: "Visual Studio" }, { name: "Figma" }, { name: "Photoshop" }, { name: "Mondays" }, ],
+        stack: [{ name: "C" }, { name: "SDL2" }, { name: "Github" }, { name: "VisualStudio" }, { name: "Figma" }, { name: "Photoshop" }, { name: "Mondays" }, ],
         image: "/assets/work/toyboxgif.gif",
+        icon: "/assets/work/ToyboxLogo.png", // ✅ new field
         live: "https://fun-makers-studios.github.io/Project2_TheToyBox/",
         github: "https://github.com/Fun-Makers-Studios/Project2_TheToyBox",
     },
     {
         num: "08",
         category: "Beta Release",
-        title: "UDP & TCP Connections",
+        title: "UDP & TCP Sessions",
+        status: "Academic Demonstration",
         description: "Unity scene with UDP & TCP lobby connection for Client-Server. Player is located in server room, wit room creation supporting Room Naming, Usernames, Custom IP Address, User Port Information, & Active Users. Also provides real-time Client to Client Messaging via Server Routing. Able to support multiple client connections to the same server via multithreading based on users.",
-        stack: [{ name: "Unity" }, { name: "C++" }, { name: "UDP" }, { name: "TCP" }, ],
+        stack: [{ name: "Unity" }, { name: "C" }, { name: "UDP" }, { name: "TCP" }, ],
         image: "/assets/work/Sockets.png",
+        icon: "/assets/work/TCPLogo.png", // ✅ new field
         live: "https://github.com/RylanJGraham/Connections_UnityExercise",
         github: "https://github.com/RylanJGraham/Connections_UnityExercise",
     },
@@ -111,9 +131,11 @@ const projects1 = [
         num: "09",
         category: "Retro Pinball",
         title: "Retro Pinball",
+        status: "Released",
         description: "Game created using Box2D Physics Libraries and SDL Libraries on Microsoft Visual Studio. Created to demonstrate collision physics understanding.",
-        stack: [{ name: "C++" }, { name: "SDL" }, { name: "Github" }, { name: "Visual Studio" }, { name: "Box2D" }, { name: "Photoshop" } ],
+        stack: [{ name: "C" }, { name: "SDL2" }, { name: "Github" }, { name: "VisualStudio" }, { name: "Photoshop" } ],
         image: "/assets/work/pinballgif.gif",
+        icon: "/assets/work/Pinball.png", // ✅ new field
         live: "https://github.com/AdriaPm/Pinball-Game",
         github: "https://github.com/AdriaPm/Pinball-Game",
     },
@@ -121,9 +143,11 @@ const projects1 = [
         num: "10",
         category: "Snow Race",
         title: "Snow Race",
+        status: "Released",
         description: "Simple 3D racing car game created for Physics II subject at CITM-UPC university. Using Bullet3D collision and aerodynamic forces. OpenGL rendering for game & camera elements. ",
-        stack: [{ name: "C++" }, { name: "SDL" }, { name: "Github" }, { name: "Visual Studio" }, { name: "Bullet3D" }, { name: "OpenGL" } ],
+        stack: [{ name: "C" }, { name: "SDL2" }, { name: "Github" }, { name: "VisualStudio" }, { name: "OpenGL" } ],
         image: "/assets/work/car.png",
+        icon: "/assets/work/SnowLogo.png", // ✅ new field
         live: "https://github.com/AdriaPm/RaceCarGame3D",
         github: "https://github.com/AdriaPm/RaceCarGame3D",
     },
@@ -131,9 +155,11 @@ const projects1 = [
         num: "11",
         category: "WindJammers Replica",
         title: "WindJammers Replica",
+        status: "Released",
         description: "WindJammers replica game created as first video game project at CITM-UPC university. Created using C++, SDL2, and title original sprites.",
-        stack: [{ name: "C++" }, { name: "SDL" }, { name: "Github" }, { name: "Visual Studio" },],
+        stack: [{ name: "C" }, { name: "SDL2" }, { name: "Github" }, { name: "VisualStudio" },],
         image: "/assets/work/windjammers.gif",
+        icon: "/assets/work/WindJammersLogo.png", // ✅ new field
         live: "https://github.com/AdriaPm/RaceCarGame3D",
         github: "https://github.com/AdriaPm/RaceCarGame3D",
     },
@@ -148,6 +174,7 @@ const projects2 = [
         description: "The Qatar 2022 Data Visualization is a web application created to demonstrate Argentina's path to victory in the 2022 Fifa World Cup from a data standpoint. Developed using React, in combination with Material UI, X-Charts, and ReCharts, the web app hopes to provide users with a clean and intuitive data journey throughout the tournament. Check it out!",
         stack: [{ name: "Vercel" }, { name: "React" }, { name: "TypeScript" }, { name: "Material" }, { name: "XCharts" }, { name: "Kaggle" }, { name: "Excel" }, { name: "Figma" },],
         image: "/assets/work/QatarDEMO.png",
+        image2: "/assets/work/QatarDEMO.png", // bottom screen
         status: "Live",
         icon: "/assets/work/QatarLogo.png", // ✅ new field
         live: "https://worldcup2022datavisualized.vercel.app",
@@ -175,6 +202,24 @@ const projects2 = [
         image: "/assets/work/summaraize.gif",
         live: "https://iridescent-blancmange-7bcd57.netlify.app/",
         github: "https://github.com/RylanJGraham/AI-ArticleSummarizer",
+    },
+    {
+        num: "05",
+        category: "Beta Release",
+        title: "Ticket Vendor Front-End",
+        status: "Front-End Repo",
+        description: "An HTML & CSS project to demonstrate improved ability in HTML workflow, and usage of JavaScript. Created as proposal pitch for ticket vendor application. ​",
+        stack: [{ name: "VisualStudio" }, { name: "HTML" }, { name: "Javascript" }, { name: "Tailwind" },],
+        image: "/assets/work/ticketvendor.gif",
+    },
+    {
+        num: "05",
+        category: "Beta Release",
+        title: "Youtube Front-End",
+        status: "Front-End Repo",
+        description: "An HTML & CSS Learning project, with a polished final product​",
+        stack: [{ name: "HTML" }, { name: "CSS" }, { name: "ViSUALSTUDIO" },],
+        image: "/assets/work/youtubeclone.gif",
     },
     
     // Add more projects for this category if needed
@@ -274,7 +319,7 @@ const projects4 = [
         category: "3D Art & Animation",
         title: "Studio Ghibli 3D Environment",
         description: "3D Environment created using the Unity Engine, inspired by the Studio Ghibli film: Spirited Away. Explore the scene, with fbx's created using Maya, and painted with Substance Painter & Z-brush. FBX models created following protocols for tri-management, featuring LOD detailing, & more! Custom Camera optimization and shader rendering through scripting using C++.",
-        stack: [{ name: "Maya" }, { name: "Unity" }, { name: "Substance Painter" }, { name: "Photoshop" }, { name: "C#" }],
+        stack: [{ name: "Maya" }, { name: "Unity" }, { name: "Substance" }, { name: "Photoshop" }, { name: "C" }],
         image: "/assets/work/ghibli.gif",
         live: "https://rylangraham02.wixsite.com/website/team-1",
         github: "https://github.com/RylanJGraham/Unity_Scene-Spirited-Away",
@@ -284,9 +329,8 @@ const projects4 = [
         category: "3D Art & Animation",
         title: "Mummy FBX Animations",
         description: "FBX model animations created in Maya. Completed FBX rigging, using joints & skeletal structuring. Completed animations using fundamentals of animation, all while maintaining model integrity.",
-        stack: [{ name: "Maya" }, { name: "Unity" }, { name: "Substance Painter" }, { name: "Photoshop" }, { name: "C#" }],
+        stack: [{ name: "Maya" }, { name: "Unity" }, { name: "Substance" }, { name: "Photoshop" }, { name: "C" }],
         image: "/assets/work/kingtut.gif",
-        live: "https://github.com/RylanJGraham/3D_Animations_Unity",
         github: "https://github.com/RylanJGraham/3D_Animations_Unity",
     },
     {
@@ -294,27 +338,25 @@ const projects4 = [
         category: "Raikou Textured FBX",
         title: "Raikou Textured FBX",
         description: "Low-poly model and high poly modeling on 3DS-Max. Painting on Zbrush, unwrapping and lighting using UVLayout and 3DSMAX. ",
-        stack: [{ name: "3DS Max" }, { name: "Substance Painter" }, { name: "Blender" }, { name: "Zbrush" }],
+        stack: [{ name: "DSMax" }, { name: "Substance" }, { name: "Blender" }, { name: "Zbrush" }],
         image: "/assets/work/raikou.jpg",
         live: "https://docs.google.com/document/d/e/2PACX-1vQy6Co0dpBb8juPjImHzrmheLdkyvuH70GU3kPwEp8W2Av3AjBtfxpa6V371ALjzFABdO8j-lW13ixP/pub",
-        github: "https://docs.google.com/document/d/e/2PACX-1vQy6Co0dpBb8juPjImHzrmheLdkyvuH70GU3kPwEp8W2Av3AjBtfxpa6V371ALjzFABdO8j-lW13ixP/pub",
     },
     {
         num: "04",
         category: "3D Art & Animation",
         title: "Penguin 2D Animation",
         description: "Collection of Hand-Drawn Animations completed over various timeframes. Work with Frame by Frame, Pegs, and more animation fundamentals.",
-        stack: [{ name: "ToonBoom Harmony" }, { name: "Photoshop" }, { name: "Wacom Drawing Pad" }],
+        stack: [{ name: "ToonBoom" }, { name: "Photoshop" }, { name: "Wacom" }],
         image: "/assets/work/penguin.gif",
         live: "https://rylangraham02.wixsite.com/website/copy-of-lab-work",
-        github: "https://rylangraham02.wixsite.com/website/copy-of-lab-work",
     },
     {
         num: "05",
         category: "3D Art & Animation",
         title: "Baker House",
         description: "​Painted Maya 3D model of island home. Project released on sketchfab complete with material maps, UV-layout, and model. Completed in 6 hours of work.",
-        stack: [{ name: "Maya" }, { name: "Substance Painter" }, { name: "Photoshop" }, { name: "Blender" }, { name: "Sketchfab" }],
+        stack: [{ name: "Maya" }, { name: "Substance" }, { name: "Photoshop" }, { name: "Blender" }, { name: "Sketchfab" }],
         image: "/assets/work/bakerhouse.png",
         live: "https://sketchfab.com/3d-models/graham-rylan-diorama-ca883fbcfc714696a1e869d70d7a4a3b?utm_medium=embed&utm_campaign=share-popup&utm_content=ca883fbcfc714696a1e869d70d7a4a3b",
         github: "https://github.com/RylanJGraham/EnvironmentPracticeUnityScene",
@@ -326,9 +368,23 @@ const projects5 = [
     {
         num: "01",
         category: "Full Stack App Project",
-        title: "SEAT-Cupra ML Software Developer Intern",
-        description: "Working with SEAT-Cupra to develop advanced machine learning solutions for UI/UX. Project was created using QLearning, PyTorch, Unity Engine, and Supabase PostgreSQL",
-        stack: [{ name: "PyTorch" }, { name: "Unity Engine" }, { name: "Python" }, { name: "Supabase" }, { name: "C#" } ],
+        company: "VRAIn Medical",
+        logo: "/assets/work/VRAIn_Main_Logo.png",
+        title: "Software Developer & Image Intern",
+        description: "Working with VRAIn on development of key product lines. Assisting with application development, prototyping, business analytics, and image editing.",
+        stack: [{ name: "Astro" }, { name: "Unity" }, { name: "Figma" }, { name: "Excel" }, { name: "Firebase" },  { name: "Docker" }, { name: "Photoshop" }  ],
+        image: "/assets/work/VRAIN.png",
+        live: "https://vrain-medical.com/",
+        github: "https://www.cupraofficial.es/",
+    },
+    {
+        num: "01",
+        category: "Full Stack App Project",
+        company: "SEAT Cupra",
+        logo: "/assets/work/Cupra-SEAT.png",
+        title: "ML Software Developer Intern",
+        description: "Worked with SEAT-Cupra to develop advanced machine learning solutions for UI/UX. Project was created using QLearning, PyTorch, Unity Engine, and Supabase PostgreSQL",
+        stack: [{ name: "PyTorch" }, { name: "Unity" }, { name: "Python" }, { name: "Supabase" }, { name: "C" } ],
         image: "/assets/work/intern.png",
         live: "https://www.cupraofficial.es/",
         github: "https://www.cupraofficial.es/",
@@ -336,9 +392,11 @@ const projects5 = [
     {
         num: "02",
         category: "Video Game Project",
+        company: "Catedra SEAT-UPC",
+        logo: "/assets/work/ctedraupc.png",
         title: "SEAT-Cupra UPC Catedra Gamified Car",
         description: "Created a gamified car application to improve the user driving experience. Developed a prototype & presented to SEAT-Cupra & EDAG departments. Worked in a team of 4 people from similar backgrounds.",
-        stack: [{ name: "Figma" }, { name: "Unity" }, { name: "C#" }, { name: "Photoshop" }, { name: "Google Slides" }],
+        stack: [{ name: "Figma" }, { name: "Unity" }, { name: "C" }, { name: "Photoshop" }, { name: "Slides" }],
         image: "/assets/work/gamified.png",
         live: "https://www.citm.upc.edu/blog/presentacion-de-los-proyectos-cupra-gamified-car/",
         github: "https://www.citm.upc.edu/blog/presentacion-de-los-proyectos-cupra-gamified-car/",
@@ -358,25 +416,26 @@ const projects6 = [
         github: "https://github.com/JoeyCM/Delivery3",
     },
     {
-        num: "02",
+        num: "01",
         category: "Beta Release",
-        title: "A/B Data Testing",
-        description: "A/B Testing data was analyzed for popular game title. Tasked with determining boost in level simplicity was good for key game KPI's. Data was process & analyzed using MySQL, R, and Tableau to evaluate key metrics for the game.",
-        stack: [{ name: "MySQL" }, { name: "R-Studio" }, { name: "Excel" }, { name: "Tableau" }, { name: "Unity" }, ],
-        image: "/assets/work/DataAnalysis.png",
-        live: "https://docs.google.com/presentation/d/e/2PACX-1vS-bU3SGt7YojZd5rxXTxneQj6-zUBOpT1aRxRIzi_nZeYuaxoZHeyGD-3lrtp4RD_IuSuPt30b0Iea/pub?start=false&loop=false&delayms=3000",
-        github: "https://docs.google.com/presentation/d/e/2PACX-1vS-bU3SGt7YojZd5rxXTxneQj6-zUBOpT1aRxRIzi_nZeYuaxoZHeyGD-3lrtp4RD_IuSuPt30b0Iea/pub?start=false&loop=false&delayms=3000",
+        title: "CAD Camera Viewer",
+        description: "The Unity Debug Tool is a tool to be used by Unity Game Developers to gain real-time insights into player, enemy, or game-state data. The tool utilizes MySQL databases, PHP requests, and in-game events to help developers display live player game data in their scene. Currently featuring heatmap, and prefab generation for player deaths, damage, & enemy states, with customizable coloring, scaling, intensity and more! Check it out!",
+        stack: [{ name: "Unity" }, { name: "MySQL" }, { name: "PHP" }, { name: "C++" }, ],
+        image: "/assets/work/HeatMap.png",
+        live: "https://github.com/JoeyCM/Delivery3",
+        github: "https://github.com/JoeyCM/Delivery3",
     },
     {
-        num: "03",
+        num: "01",
         category: "Beta Release",
-        title: "Game KPI's",
-        description: "Responsible for retrieving key game KPI data from a game within the Unity Engine. Utilized MySQL for data storage, phpMyAdmin for PHP Scripting and HTTP Requesting, ending with Microsoft Excel for visualization creation",
-        stack: [{ name: "MySQL" }, { name: "phpMyAdmin" }, { name: "Excel" }, { name: "Unity" }, ],
-        image: "/assets/work/Deliv1.png",
-        live: "https://docs.google.com/presentation/d/e/2PACX-1vTla1oDAGy3HtqNCRpYm2wkQkIlfjQAzaGbJEz8mlrUGdqhwwkh373zkkpvvLRPILeoKmBya__NrfKd/pub?start=false&loop=false&delayms=3000",
-        github: "https://docs.google.com/presentation/d/e/2PACX-1vTla1oDAGy3HtqNCRpYm2wkQkIlfjQAzaGbJEz8mlrUGdqhwwkh373zkkpvvLRPILeoKmBya__NrfKd/pub?start=false&loop=false&delayms=3000",
+        title: "Euler Calculator",
+        description: "The Unity Debug Tool is a tool to be used by Unity Game Developers to gain real-time insights into player, enemy, or game-state data. The tool utilizes MySQL databases, PHP requests, and in-game events to help developers display live player game data in their scene. Currently featuring heatmap, and prefab generation for player deaths, damage, & enemy states, with customizable coloring, scaling, intensity and more! Check it out!",
+        stack: [{ name: "Unity" }, { name: "MySQL" }, { name: "PHP" }, { name: "C++" }, ],
+        image: "/assets/work/HeatMap.png",
+        live: "https://github.com/JoeyCM/Delivery3",
+        github: "https://github.com/JoeyCM/Delivery3",
     },
+    
     // Add more featured projects if needed
 ];
 
@@ -548,35 +607,48 @@ const Work = () => {
         <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 Projects
         </div>
+        <div className="flex-grow h-px mt-4 mb-2 bg-accent"></div>
         </div>
         
   
-        <Tabs defaultValue="thesis" className="w-full">
+        <Tabs defaultValue="apps" className="container mx-auto mb-2">
           {/* Top-Level Tab Buttons in a Row */}
-          <TabsList className="flex flex-col sm:flex-row justify-center items-center sm:items-stretch flex-wrap gap-4 mb-2">
-            <TabsTrigger className="w-44 h-12 text-center flex items-center justify-center gap-2 text-md" value="apps">
+          <TabsList className="flex flex-col mx-auto sm:flex-row justify-center items-center sm:items-stretch flex-nowrap gap-4 mb-2">
+            <TabsTrigger className="h-12 text-center flex items-center justify-center gap-2 text-xl" value="apps">
                 <FaMobileAlt className="text-lg" /> Apps
             </TabsTrigger>
-            <TabsTrigger className="w-44 h-12 text-center flex items-center justify-center gap-2 text-md" value="web">
+            <TabsTrigger className="h-12 text-center flex items-center justify-center gap-2 text-xl" value="web">
                 <FaGlobe className="text-lg" /> Web
             </TabsTrigger>
-            <TabsTrigger className="w-44 h-12 text-center flex items-center justify-center gap-2 text-md" value="games">
+            <TabsTrigger className="h-12 text-center flex items-center justify-center gap-2 text-xl" value="games">
                 <FaGamepad className="text-lg" /> Video Games
             </TabsTrigger>
-            <TabsTrigger className="w-44 h-12 text-center flex items-center justify-center gap-2 text-md" value="professional">
-                <FaBuilding className="text-lg" /> Industry
+            <TabsTrigger className="h-12 text-center flex items-center justify-center gap-2 text-xl" value="professional">
+                <FaBuilding className="text-lg" /> Professional
             </TabsTrigger>
-            <TabsTrigger className="w-48 h-12 text-center flex items-center justify-center gap-2 text-md" value="data">
-                <FaCode className="text-lg" /> Software
+            <TabsTrigger className="h-12 text-center flex items-center justify-center gap-2 text-xl" value="art">
+                <FaBrush className="text-lg" /> Art
+            </TabsTrigger>
+            <TabsTrigger className="h-12 text-center flex items-center justify-center gap-2 text-xl" value="data">
+                <FaCode className="text-lg" /> Engineering
             </TabsTrigger>
             </TabsList>
   
           <TabsContent value="apps">
-            <div className="container mx-auto">
+            <div className="container w-full">
                 <div className="flex items-center my-4">
                 <div className="flex-grow h-px bg-accent"></div>
                 </div>
                 <AppStackDisplay projects={projects3} />
+            </div>
+            </TabsContent>
+
+            <TabsContent value="art">
+            <div className="container w-full">
+                <div className="flex items-center my-4">
+                <div className="flex-grow h-px bg-accent"></div>
+                </div>
+                <ArtStackDisplay projects={projects4} />
             </div>
             </TabsContent>
 
@@ -594,29 +666,26 @@ const Work = () => {
           {/* Video Games */}
           <TabsContent value="games">
             <div className="container mx-auto">
-              <div className="text-8xl font-extrabold text-transparent text-outline">Video Games</div>
               <div className="flex items-center my-4">
                 <div className="flex-grow h-px bg-accent"></div>
               </div>
-              <ProjectSlideshow projects={projects1} />
+              <VideoGameStackDisplay projects={projects1} />
             </div>
           </TabsContent>
   
           {/* Professional */}
           <TabsContent value="professional">
             <div className="container mx-auto">
-              <div className="text-8xl font-extrabold text-transparent text-outline">Professional</div>
               <div className="flex items-center my-4">
                 <div className="flex-grow h-px bg-accent"></div>
               </div>
-              <ProjectSlideshow projects={projects5} />
+              <IndustryStackDisplay projects={projects5} />
             </div>
           </TabsContent>
   
           {/* Data Engineering */}
           <TabsContent value="data">
             <div className="container mx-auto">
-              <div className="text-8xl font-extrabold text-transparent text-outline">Data Engineering</div>
               <div className="flex items-center my-4">
                 <div className="flex-grow h-px bg-accent"></div>
               </div>
