@@ -14,7 +14,7 @@ const AppStackDisplay = ({ projects }) => {
     };
 
     return (
-        <div className="flex flex-col gap-12 px-4 sm:px-6 lg:px-12">
+        <div className="flex flex-col gap-12 sm:px-2 lg:px-12">
             {projects.map((project, index) => {
                 const isExpanded = expandedIndex === index;
                 return (
@@ -54,11 +54,11 @@ const AppStackDisplay = ({ projects }) => {
                         </div>
 
                         {/* Info Container: Bottom left stack of Title, Tech, Description */}
-                        <div className="absolute bottom-6 left-6 right-6 z-30 flex flex-col gap-4 max-w-full">
+                        <div className="absolute bottom-6 left-2 right-2 z-30 flex flex-col gap-4 max-w-full">
                             {/* Title + Tech Stack Row */}
                             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-6 w-full">
                                 {/* Title + Status + Icon */}
-                                <div className="flex items-center gap-4 bg-black/70 px-4 py-2 rounded-xl shadow-lg">
+                                <div className="flex items-center gap-4 bg-black/70 px-2 py-2 rounded-xl shadow-lg">
                                     {project.icon && (
                                         <Image
                                             src={project.icon}
