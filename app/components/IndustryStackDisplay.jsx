@@ -1,91 +1,10 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { BsArrowUpRight } from "react-icons/bs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import {
-  FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaCuttlefish, FaPython, FaNode,
-  TbAugmentedReality,
-  VscVscode,
-  GiOwl,
-  SiFlutter, SiAstro, SiSupabase, SiNextdotjs, SiDart, SiFirebase,
-  SiStripe, SiRapid, SiPostgresql, SiUnity, SiAutodeskmaya,
-  SiTailwindcss, SiUnrealengine, SiBlender, SiAdobephotoshop,
-  SiAdobeillustrator, SiAdobepremierepro, SiJavascript,
-  SiVisualstudio, SiAndroidstudio, SiPycharm, SiHarmonyos,
-  SiPushbullet, SiLibrarything, SiOpengl, SiBox, SiMysql, SiGooglegemini,
-  SiR, SiTableau, SiExpo, SiPhp, SiDocker, SiGithub, SiStackoverflow, SiGoogleslides, SiMicrosoftexcel, SiC,
-  SiGooglemaps,
-  SiAdobe,
-  SiMax,
-  SiAutodesk,
-  SiWacom,
-  SiSketchfab,
-  SiPytorch,
-  SiPython,
-} from "react-icons/si";
-import { FaPaintBrush } from 'react-icons/fa';
-import { FiFigma } from "react-icons/fi";
-
-const techIcons = {
-  figma: FaFigma,
-  photoshop: SiAdobephotoshop,
-  illustrator: SiAdobeillustrator,
-  premiere: SiAdobepremierepro,
-  html: FaHtml5,
-  excel: SiMicrosoftexcel,
-  css: FaCss3,
-  javascript: SiJavascript,
-  js: FaJs,
-  googleslides: SiGoogleslides,
-  react: FaReact,
-  nextjs: SiNextdotjs,
-  flutter: SiFlutter,
-  dart: SiDart,
-  python: FaPython,
-  cpp: FaCuttlefish,
-  node: FaNode,
-  supabase: SiSupabase,
-  firebase: SiFirebase,
-  stripe: SiStripe,
-  postgresql: SiPostgresql,
-  mysql: SiMysql,
-  unity: SiUnity,
-  unreal: SiUnrealengine,
-  maya: SiAutodeskmaya,
-  blender: SiBlender,
-  vscode: VscVscode,
-  visualstudio: SiVisualstudio,
-  androidstudio: SiAndroidstudio,
-  pycharm: SiPycharm,
-  r: SiR,
-  tableau: SiTableau,
-  expo: SiExpo,
-  php: SiPhp,
-  docker: SiDocker,
-  github: SiGithub,
-  stackoverflow: SiStackoverflow,
-  gemini: SiGooglegemini,
-  c: SiC,
-  ar: TbAugmentedReality,
-  flutterflow: SiFlutter,
-  maps: SiGooglemaps,
-  rapid: SiRapid,
-  substance: SiAdobe,
-  dsmax: SiAutodesk,
-  zbrush: FaPaintBrush,
-  toonboom: SiHarmonyos,
-  wacom: SiWacom,
-  sketchfab: SiSketchfab,
-  pytorch: SiPytorch,
-  unity: SiUnity,
-  figma: FiFigma,
-  astro: SiAstro,
-  python: SiPython,
-  slides: SiGoogleslides,
-};
+import { techIcons } from './Icons'; // Make sure Icons.js/Icons.tsx exports `techIcons`
 
 const IndustryStackDisplay = ({ projects }) => {
     return (

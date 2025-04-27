@@ -12,6 +12,8 @@ import {
     FaPython, // For Python
     FaNode, // For Node.js
     FaBrush,
+    FaPaintBrush,
+    FaNetworkWired,
 } from "react-icons/fa";
 
 import {
@@ -57,6 +59,27 @@ import {
     SiDocker,
     SiGithub,
     SiStackoverflow,
+    SiReactquery,
+    SiVite,
+    SiShadcnui,
+    SiMaterialdesign,
+    SiVercel,
+    SiSketchfab,
+    SiWacom,
+    SiAutodesk,
+    SiTypescript,
+    SiC,
+    SiApifox,
+    SiMicrosoftexcel,
+    SiGoogleslides,
+    SiKaggle,
+    SiAdobe,
+    SiAseprite,
+    SiWwise,
+    SiGooglegemini,
+    SiPytorch,
+    SiTrello,
+    SiGooglemaps,
 } from "react-icons/si";
 
 // About data
@@ -160,40 +183,87 @@ const education = {
 // Skills data categorized into tabs
 const skills = {
     title: "My Skills",
-    description: "Experience in softwares, languages, extensions, and libraries from all corners of the tech space. Work in Full Stack Development, UI/UX Design, Video Games, & 3D Art means I bring a lot to the table!",
+    description: "Experience in software, languages, extensions, and libraries across the tech space. Work in Full Stack Development, UI/UX Design, Video Games, & 3D Art!",
     categories: {
-        "Code": [
+        "Coding": [
+            { icon: <FaHtml5 />, name: "HTML" },
+            { icon: <FaCss3 />, name: "CSS" },
+            { icon: <SiJavascript />, name: "JavaScript" },
+            { icon: <SiTypescript />, name: "TypeScript" },
             { icon: <FaPython />, name: "Python" },
             { icon: <FaCuttlefish />, name: "C++" },
-            { icon: <SiJavascript />, name: "JavaScript" },
+            { icon: <SiR />, name: "R" },
             { icon: <SiDart />, name: "Dart" },
-            { icon: <SiPhp />, name: "PHP" },
-            { icon: <FaHtml5 />, name: "HTML 5" },
-            { icon: <FaCss3 />, name: "CSS 3" },
         ],
-        "Frameworks": [
+        "Frontend": [
             { icon: <FaReact />, name: "React" },
             { icon: <SiNextdotjs />, name: "Next.js" },
-            { icon: <SiFlutter />, name: "Flutter" },
             { icon: <SiTailwindcss />, name: "Tailwind CSS" },
             { icon: <SiAstro />, name: "Astro" },
+            { icon: <SiVercel />, name: "Vercel" },
             { icon: <SiExpo />, name: "Expo" },
+            { icon: <SiFlutter />, name: "Flutter" },
+            { icon: <SiReactquery />, name: "RTK Query" },
+            { icon: <SiVite />, name: "Vite" },
+            { icon: <SiShadcnui />, name: "Shadcn/UI" },
+            { icon: <SiMaterialdesign />, name: "Material UI" },
+            { icon: <TbAugmentedReality />, name: "Augmented Reality (AR)" },
         ],
-        "DevOps": [ // APIs, backends, platforms
-                { icon: <FaNode />, name: "Node.js" },
-                { icon: <SiFirebase />, name: "Firebase" },
-                { icon: <SiSupabase />, name: "Supabase" },
-                { icon: <SiStripe />, name: "Stripe" },
-                { icon: <SiRapid />, name: "RapidAPI" },
-                { icon: <SiPostgresql />, name: "PostgreSQL" },
-                { icon: <SiMysql />, name: "MySQL" },
-                { icon: <SiDocker />, name: "Docker" },
-                { icon: <CgVercel />, name: "Vercel" },
-            ],
-        "Game-Dev": [
+        "Backend": [
+            { icon: <FaNode />, name: "Node.js" },
+            { icon: <SiPhp />, name: "PHP" },
+            { icon: <SiFirebase />, name: "Firebase" },
+            { icon: <SiSupabase />, name: "Supabase" },
+            { icon: <SiPostgresql />, name: "PostgreSQL" },
+            { icon: <SiMysql />, name: "MySQL" },
+            { icon: <SiDocker />, name: "Docker" },
+        ],
+        "API": [
+            { icon: <SiStripe />, name: "Stripe" },
+            { icon: <SiRapid />, name: "Rapid API" },
+            { icon: <SiApifox />, name: "REST API" },
+            { icon: <SiGooglemaps />, name: "Google Maps" },
+        ],
+        "Tools": [
+            { icon: <VscVscode />, name: "VS Code" },
+            { icon: <SiVisualstudio />, name: "Visual Studio" },
+            { icon: <SiAndroidstudio />, name: "Android Studio" },
+            { icon: <SiPycharm />, name: "PyCharm" },
+            { icon: <SiGithub />, name: "GitHub" },
+            { icon: <SiStackoverflow />, name: "StackOverflow" },
+            { icon: <SiMicrosoftexcel />, name: "Excel" },
+            { icon: <SiGoogleslides />, name: "Google Slides" },
+            { icon: <SiKaggle/>, name: "Kaggle" },
+            { icon: <BsMicrosoft />, name: "Windows" },
+            { icon: <CgMonday />, name: "Monday.com" },
+            { icon: <SiTrello />, name: "Trello" },
+        ],
+        "Design/Art/Audio": [
+            { icon: <SiAutodeskmaya />, name: "Maya" },
+            { icon: <SiAutodesk />, name: "3ds Max" },
+            { icon: <SiBlender />, name: "Blender" },
+            { icon: <SiAdobe />, name: "Substance" },
+            { icon: <FaPaintBrush />, name: "ZBrush" },
+            { icon: <SiAseprite />, name: "Aseprite" },
+            { icon: <SiWwise />, name: "Wwise" },
+            { icon: <SiSketchfab />, name: "Sketchfab" },
+            { icon: <FaFigma />, name: "Figma" },
+            { icon: <SiAdobephotoshop />, name: "Photoshop" },
+            { icon: <SiAdobeillustrator />, name: "Illustrator" },
+            { icon: <SiAdobepremierepro />, name: "Premiere Pro" },
+            { icon: <SiWacom />, name: "Wacom" },
+        ],
+        "AI & ML": [
+            { icon: <SiGooglegemini/>, name: "Google Gemini" },
+            { icon: <PiOpenAiLogo />, name: "OpenAI" },
+            { icon: <SiPytorch />, name: "PyTorch" },
+        ],
+        "Video Games": [
             { icon: <SiUnity />, name: "Unity" },
             { icon: <SiUnrealengine />, name: "Unreal Engine" },
             { icon: <SiOpengl />, name: "OpenGL" },
+            { icon: <FaNetworkWired />, name: "TCP" },
+            { icon: <TbWaveSawTool />, name: "UDP" },
             { icon: <SiLibrarything />, name: "GLM" },
             { icon: <SiLibrarything />, name: "ImGUI" },
             { icon: <SiLibrarything />, name: "Assimp" },
@@ -203,50 +273,6 @@ const skills = {
             { icon: <SiPushbullet />, name: "Bullet3D Physics" },
             { icon: <SiBox />, name: "Box2D Physics" },
             { icon: <SiLibrarything />, name: "devIL" },
-        ],
-        "Art": [
-            {
-                icon: <FaFigma />,
-                name: "Figma",
-            },
-            {
-                icon: <SiAdobephotoshop />,
-                name: "Photoshop",
-            },
-            {
-                icon: <SiAutodeskmaya />,
-                name: "Maya",
-            },
-            {
-                icon: <SiBlender />,
-                name: "Blender",
-            },
-            {
-                icon: <SiAdobeillustrator />,
-                name: "Illustrator",
-            },
-            {
-                icon: <SiAdobepremierepro />,
-                name: "Premier Pro",
-            },
-            {
-                icon: <FaBrush />,
-                name: "Z-Brush",
-            },
-            {
-                icon: <SiHarmonyos />,
-                name: "ToonBoom Harmony",
-            },
-        ],
-        "Tools": [ // IDEs & utilities
-            { icon: <VscVscode />, name: "VS Code" },
-            { icon: <SiVisualstudio />, name: "Visual Studio" },
-            { icon: <SiAndroidstudio />, name: "Android Studio" },
-            { icon: <SiPycharm />, name: "Pycharm" },
-            { icon: <SiGithub />, name: "Github" },
-            { icon: <SiStackoverflow />, name: "StackOverflow" },
-            { icon: <PiOpenAiLogo />, name: "ChatGPT" },
-            { icon: <BsMicrosoft/>, name: "Windows" },
         ],
     },
 };
@@ -259,7 +285,8 @@ import { Tooltip, TooltipProvider } from "@/components/ui/tooltip";
 import { TooltipContent, TooltipTrigger } from "@radix-ui/react-tooltip";
 import { BsFileExcel, BsMicrosoft } from 'react-icons/bs';
 import { PiMicrosoftExcelLogo, PiOpenAiLogo } from 'react-icons/pi';
-import { CgVercel } from 'react-icons/cg';
+import { CgMonday, CgVercel } from 'react-icons/cg';
+import { TbAugmentedReality, TbWaveSawTool } from 'react-icons/tb';
 
 const Resume = () => {
     return (
@@ -269,11 +296,11 @@ const Resume = () => {
             opacity:1,
             transition: {delay:2.4, duration: 0.4, ease: "easeIn"},
         }}
-        className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+        className="min-h-[80vh] flex items-center justify-center py-0 xl:py-0"
         >
             <div className="container mx-auto">
                 <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
-                    <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+                    <TabsList className="flex flex-col w-full max-w-[160px] mx-auto xl:mx-0 gap-6">
                         <TabsTrigger value="experience">Experience</TabsTrigger>
                         <TabsTrigger value="education">Education</TabsTrigger>
                         <TabsTrigger value="skills">Skills</TabsTrigger>
@@ -285,7 +312,7 @@ const Resume = () => {
                         <TabsContent value="experience" className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                                <p className=" text-white/60 mx-auto xl:mx-0">
                                     {experience.description}
                                 </p>
                                 <ScrollArea className="h-[400px]">
@@ -318,7 +345,7 @@ const Resume = () => {
                         <TabsContent value="education" className="w-full">
                         <div className="flex flex-col gap-[30px] text-center xl:text-left">
                             <h3 className="text-4xl font-bold">{education.title}</h3>
-                            <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                            <p className=" text-white/60 mx-auto xl:mx-0">
                                 {education.description}
                             </p>
                             <ScrollArea className="h-[400px]">
@@ -351,7 +378,7 @@ const Resume = () => {
                             <div className="flex flex-col gap-[30px]">
                                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                     <h3 className="text-4xl font-bold">{skills.title}</h3>
-                                    <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
+                                    <p className=" text-white/60 mx-auto xl:mx-0">{skills.description}</p>
                                 </div>
                                 <Tabs defaultValue="Front-End">
                                 <   TabsList className="grid grid-cols-2 gap-2 sm:flex sm:flex-row sm:justify-center mb-4"> 
