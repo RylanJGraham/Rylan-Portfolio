@@ -38,7 +38,7 @@ const Work = () => {
         className="min-h-[80vh] flex flex-col justify-center py-0 xl:px-0"
       >
         <div className="container mx-auto mb-2">
-        <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+        <div className="text-4xl leading-none font-extrabold text-transparent text-outline">
                 Projects
         </div>
         <div className="flex-grow h-px mt-4 mb-2 bg-accent"></div>
