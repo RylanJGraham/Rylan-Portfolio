@@ -129,7 +129,7 @@ const experience = {
         {
             imgSrc: '/assets/work/VRAIn_Main_Logo.png',
             company: "VRAIn Medical",
-            position: "Software Developer & Image Editing",
+            position: "Software Developer & UI/UX Designer",
             duration: "2025-present",
         },
         {
@@ -157,8 +157,14 @@ const experience = {
 const education = {
     icon: '',
     title: 'My Education',
-    description: "I am currently studying Video Game Design, building on a foundation of Mechanical Engineering. This diverse academic background equips me with a unique blend of technical and creative skills.",
+    description: "I am currently studying Software Development & Architecture at La Salle, building on a foundation of Videogame Design & Development at the Polytechnic University of Catalonia, Mechanical Engineering at University of Alberta. This diverse academic background equips me with a unique blend of technical and creative skills.",
     items: [
+        {
+            imgSrc: '/assets/work/LaSalle.png',
+            institution: "La Salle - Ramon Llull University",
+            degree: "Masters: Software Development & Architecture",
+            duration: "2025-2026",
+        },
         {
             imgSrc: '/assets/work/UPC.png',
             institution: "Polytechnic University of Catalonia",

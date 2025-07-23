@@ -26,18 +26,6 @@ export const projects1 = [
     },
     {
         num: "03",
-        category: "VertX Game Engine",
-        title: "VertX Game Engine",
-        status: "Published Software",
-        description: "Fully functional Game Engine developed using OpenGL framework, with additional libraries. Supports FBX rendering, texturing, Game Objects management, camera controls as of latest release.",
-        stack: [{ name: "C" }, { name: "OpenGL" }, { name: "SDL2" }, { name: "VisualStudio" }, { name: "Github" }, ],
-        image: "/assets/work/VertX.gif",
-        icon: "/assets/work/VertXLogo.png", // ✅ new field
-        live: "https://citm-upc.github.io/VertX-Game-Engine/",
-        github: "https://github.com/CITM-UPC/VertX-Game-Engine",
-    },
-    {
-        num: "04",
         category: "Game AI",
         title: "Game AI",
         status: "Academic Demonstration",
@@ -49,7 +37,7 @@ export const projects1 = [
         github: "https://github.com/RylanJGraham/GameAI_Exercises",
     },
     {
-        num: "05",
+        num: "04",
         category: "Unity Audio Systems",
         title: "Unity Audio",
         status: "Academic Demonstration",
@@ -61,19 +49,19 @@ export const projects1 = [
         github: "https://github.com/AdriaPm/DigitalAudio_UnityScene",
     },
     {
-        num: "06",
+        num: "05",
         category: "Worms Replica",
         title: "Worms Replica",
         status: "Released",
         description: "Worms game title replica. Physics Engine was original and created using classroom learnings. Concepts: Drag Force, Projectile Motion, Ballistics, & Gravitational Elements.",
         stack: [{ name: "C" }, { name: "SDL2" }, { name: "Github" }, { name: "VisualStudio" }],
         image: "/assets/work/Worms.png",
-        icon: "/assets/work/WormsIcon.png", // ✅ new field
+        icon: "/assets/work/wormsIcon.png", // ✅ new field
         live: "https://github.com/Historn/WormsGameProject",
         github: "https://github.com/Historn/WormsGameProject",
     },
     {
-        num: "07",
+        num: "06",
         category: "The ToyBox",
         title: "The ToyBox",
         status: "Released",
@@ -85,7 +73,7 @@ export const projects1 = [
         github: "https://github.com/Fun-Makers-Studios/Project2_TheToyBox",
     },
     {
-        num: "08",
+        num: "07",
         category: "Beta Release",
         title: "UDP & TCP Sessions",
         status: "Academic Demonstration",
@@ -115,7 +103,7 @@ export const projects1 = [
         description: "Game created using Box2D Physics Libraries and SDL Libraries on Microsoft Visual Studio. Created to demonstrate collision physics understanding.",
         stack: [{ name: "C" }, { name: "SDL2" }, { name: "Github" }, { name: "VisualStudio" }, { name: "Photoshop" } ],
         image: "/assets/work/pinballgif.gif",
-        icon: "/assets/work/Pinball.png", // ✅ new field
+        icon: "/assets/work/pinball.png", // ✅ new field
         live: "https://github.com/AdriaPm/Pinball-Game",
         github: "https://github.com/AdriaPm/Pinball-Game",
     },
@@ -408,7 +396,7 @@ export const projects5 = [
         company: "VRAIn Medical",
         logo: "/assets/work/VRAIn_Main_Logo.png",
         title: "Software Developer & Image Intern",
-        description: "Working with VRAIn on development of key product lines. Assisting with application development, prototyping, business analytics, and image editing.",
+        description: "Working with VRAIn on development of key product lines. Assisting with application development, prototyping, & business analytics.",
         stack: [{ name: "Astro" }, { name: "Unity" }, { name: "Figma" }, { name: "Excel" }, { name: "Firebase" },  { name: "Docker" }, { name: "Photoshop" }  ],
         image: "/assets/work/VRAIN.png",
         live: "https://vrain-medical.com/",
@@ -444,6 +432,18 @@ export const projects5 = [
 export const projects6 = [
     {
         num: "01",
+        category: "VertX Game Engine",
+        title: "VertX Game Engine",
+        status: "Published Software",
+        description: "Fully functional Game Engine developed using OpenGL framework, with additional libraries. Supports FBX rendering, texturing, Game Objects management, camera controls as of latest release.",
+        stack: [{ name: "C" }, { name: "OpenGL" }, { name: "SDL2" }, { name: "VisualStudio" }, { name: "Github" }, ],
+        image: "/assets/work/VertX.gif",
+        icon: "/assets/work/VertXLogo.png", // ✅ new field
+        live: "https://citm-upc.github.io/VertX-Game-Engine/",
+        github: "https://github.com/CITM-UPC/VertX-Game-Engine",
+    },
+    {
+        num: "02",
         category: "Beta Release",
         title: "Unity Debug Tool",
         description: "The Unity Debug Tool to be used by Unity Game Developers to gain real-time insights into player, enemy, or game-state data. Currently featuring heatmap, and prefab generation for player deaths, damage, & enemy states, with customizable coloring, scaling, intensity and more!",
